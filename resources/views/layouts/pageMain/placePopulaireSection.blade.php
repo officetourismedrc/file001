@@ -1,7 +1,7 @@
 <section class="place-populaire section">
     <div class="place-populaire__container container">
          <div class="place-populaire__data">
-            <h2 class="section__title">Place populaire</h2>
+            <h2 class="section__title">Places populaires</h2>
             <h3 class="section__title-secondairy">Meilleurs places  à visiter quand vous etes en RD.Congo</h3>
          </div>
       <div class="place-populaire__content grid">

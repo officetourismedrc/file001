@@ -12,6 +12,7 @@
                         <div class="main-submenu-icon">
                             {{--check if view exist before to use it --}}
                             @include($sousItem->iconPath)
+                           
                         </div>
                         <div class="main-menu__title">
                             <a href="{{route('misc.infoessentiel.infovisa',['cat' =>htmlentities(urlencode($item->name), ENT_QUOTES) ,  'catid'=>$sousItem->infoessentiel_id, 'id'=>$sousItem->id, 'title'=> htmlentities(urlencode($sousItem->title), ENT_QUOTES)])}}" class="main-menu__title-link">

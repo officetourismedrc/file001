@@ -12,5 +12,11 @@ class AdminDashboardController extends Controller
         
         //return 'admin dashboa';
         return view('Admin.Admindashboard.main_content');
+        
+    }
+    
+    public function parametre(){
+        
+        return view('Admin.Admindashboard.parametre.index');
     }
 }

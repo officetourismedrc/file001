@@ -2,7 +2,7 @@
     <div class="article1__container container">
       <div class="article1__data">
         <h1 class="section__title">Actualités et Infos</h1>
-        <p class="article1-title__description">Toutes Nos actualités et Informations en relation avec le tourisme en RD.Congo</p>
+        <p class="article1-title__description">Toutes nos actualités et informations en relation avec le tourisme en RD.Congo</p>
       </div>
 
       <div class="article1__content grid swiper">

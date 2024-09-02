@@ -1,10 +1,14 @@
 /.phpunit.cache
 /node_modules
+/cart-service-ont
+/fpt
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
+/txt
 /vendor
+/xtx
 .env
 .env.backup
 .env.production

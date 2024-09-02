@@ -3,20 +3,24 @@
         <!--=================nav header top  start===================-->
           <div class="nav__header">
             <div class="nav__header-sociaux">
-                <a href="" class="nav__header-sociaux-link"><i class="ri-facebook-line"></i></a>
-                <a href="" class="nav__header-sociaux-link"><i class="ri-instagram-line"></i></a>
-                <a href="" class="nav__header-sociaux-link"><i class="ri-linkedin-line"></i></a>
+                <a href="https://www.facebook.com/officetourismerdc?mibextid=LQQJ4d" class="nav__header-sociaux-link"><img class="sociaux_logo_link" src='{{url("assets/images/facebook_update.png")}}' /></a>
+                <a href="https://www.instagram.com/officenationaltourisme_rdcongo?igsh=NTc4MTIwNjQ2YQ==" class="nav__header-sociaux-link"><img class="sociaux_logo_link" src='{{url("assets/images/instagram_update.png")}}' /></a>
+                <a href="https://twitter.com/CongoRdtourism" class="nav__header-sociaux-link"><img class="sociaux_logo_link" src='{{url("assets/images/twitter_update.png")}}' /></a>
+                 <a href="https://twitter.com/CongoRdtourism" class="nav__header-sociaux-link"><img class="sociaux_logo_link" src='{{url("assets/images/linkedIn_update.png")}}' /></a>
+                <a href="https://twitter.com/CongoRdtourism" class="nav__header-sociaux-link"><img class="sociaux_logo_link" src='{{url("assets/images/tiktok_update.png")}}' /></a>
+                   <a href="https://twitter.com/CongoRdtourism" class="nav__header-sociaux-link"><img class="sociaux_logo_link" src='{{url("assets/images/youtube_update.png")}}' /></a>
             </div>
             <div class="header__ex-tem">
             <div class="nav__header-exchange_rate">
                 <div class="exchange-rate__container">
-                    <label class="exchange-rate__icon" for="fromC"> <img src="{{url('assets/images/profit.png')}}" alt="currency" /></i> </label>
+                    <label class="exchange-rate__icon" for="fromC"> <img class="money_exchange_icon" src="{{url('assets/images/money_exchange_icon.png')}}" alt="currency" /> </label>
                     <select name="fromCurrency" id="exchange-rate-from" class="exchange-rate__to"></select>
                     <span class="exchange-rate__is">Is</span>
                     <span class="tocurrency" id="exchange-rate__">0.0</span>
                     <span class="exchange-rate__fc">FC</span>
                 </div>
             </div>
+             <!--
             <div class="header__nav-temperature">
                 <div class="weather__panel-1">
                 <span class="header-nav__weather-city">Kinshasa</span>
@@ -123,6 +127,96 @@
                     </li>
                 </ul>
             </div>
+            -->
+            
+            {{-- weather new style haha!!!!!!! --}}
+
+     <div class="meteo_container">
+      <div class="meteo-content">
+          <!-- top the visible part -->
+             <div class="meteo_top-container">
+               <div class="meteo_top-content">
+                  <div class="meteo_top-title"><span>Kinshasa</span></div>
+                  <div class="meteo_top-temp"><span>30 </span><span>&#176C</span></div>
+                  <div class="meteo_top-img"><img src="{{url('assets/images/haze.png')}}" alt=""></div>
+               </div>
+             </div>
+          <!-- end top the visible part  -->
+             <div class="meteo-body_container">
+               <div class="meteo-body__content">
+                  <!-- meteo body top -->
+                   <div class="meteo-body-top-contenair">
+                      <div class="meteo-body-top-content">
+                            <div class="meteo-bt-left">
+                               <div class="meteo-bt-title">
+                                  <div class="meteo-bt-title-content">
+                                  <span>kinshasa</span>
+                                 
+                                  </div>
+                               </div>
+
+                               <div class="meteo-insert-form">
+                                  <div class="mete-insert-form-content">
+                                  <form action="" class="meteo-insert-form-form">
+                                        <label for="">Enter city</label>
+                                        <input type="text" class="meteo-insert-form-input" focus >
+                                     </form>
+                                  </div>
+                               </div>
+                               
+                            </div>
+                            <div class="meteo-bt-right">
+                               <span class="meteo-insert_city"><i class="ri-focus-3-line"></i></span>
+                            </div>
+
+                      </div>
+                      <span class="meteo-body-title-desc">Orageux</span>
+                   </div>
+                  <!-- meteo body top -->
+                  <!-- meteo body middle -->
+
+                  <div class="meteo-middle-container">
+                    <div class="meteo-middle-content">
+                        <div class="meteo-middle-icon">
+                            <div class="meteo-middle-icon-content">
+                               <img src="{{url('assets/images/cloud.png')}}" alt="meteo icon">
+                            </div>
+                        </div>
+                        <div class="meteo-middle-temp-container">
+                             <div class="meteo-middle-temp-content">
+                               <div class="meteo-middle-temp"><span>32 </span></div><div class="meteo-middle-temp-mesure"><span class="meteo-degree">&#176C</span> <span></span></div>
+                             </div>
+                        </div>
+                        <div class="meteo-middle-right">
+                           <div class="meteo-middle-right-content">
+                              <div class='meteo-middle-right-max'><i class="ri-arrow-up-double-fill"></i><span>32 </span><span class="meteo-degree">&#176C</span></div> <div class='meteo-middle-right-min'><i class="ri-arrow-down-double-fill"></i><span>32 </span><span class="meteo-degree">&#176C</span></div>
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+ 
+                  <!-- meteo body middle -->
+
+                  <div class="meteo-middle-last-container">
+                     <div class="meteo-middle-last-content">
+                      <div class="meteo-middle-last-top">
+                         <div class="meteo-middle-last-top-item meteo-middle-last-top-humidity"><span><i class="ri-drop-line"></i></span><span>88</span>%</div>
+                         <div class="meteo-middle-last-top-item meteo-middle-last-top-wind"><i class="ri-windy-line"></i><span><span>2.1</span> </span>km/h</div>
+                         <div class="meteo-middle-last-top-item meteo-middle-last-top-humidity-2"><i class="ri-cloud-line"></i><span>20</span>%</div>
+                      </div>
+                      <div class="meteo-middle-last-bottom">
+
+                      </div>
+                     </div>
+                  </div>
+
+               </div>
+             </div>
+
+      </div>
+  </div>
+          
+      {{-- weather new styles haha!! --}}
          <!--ici-->
         </div>
           </div>
@@ -136,7 +230,7 @@
               
               <a  href="{{url('/')}}" class="nav__logo-link">
                   <!--company logo-->  
-                  <img src="{{url('assets/images/logo-paysage.png')}}" alt="ont" class="logo__image">
+                   <img src="{{url('assets/images/logo_ont_noir_blanc.png')}}" alt="ont" class="logo__image">
               </a>
             </div>
   
@@ -144,7 +238,7 @@
               <i class="ri-menu-fill"></i>
             </div>
   
-            <div class="nav__main">
+                 <div class="nav__main">
               <ul class="nav-menu__container">
                   <li class="menu__link menu-principal__1">
                       <div class="menu-link__container">
@@ -153,6 +247,7 @@
                       <div class="dropdown-menu">
                           <div class="dropdown-menu-deco"></div>
                         <ul class="dropdown-menu__links">
+                            
                           <li class="dropdown-menu__link">
                               <span class="dropdown-menu-link__title">
                                 <span class="dropdown-menu-link__titl">
@@ -162,6 +257,7 @@
                               <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                               <div class="submenu-dopdown .par-province">
                                 <!-- ici le code que tu as enlévé -->
+                                <div class="submenu-dropdown-group--container">
                               @foreach ($provinceLien as $item)
 
                               
@@ -180,16 +276,20 @@
                                     <li class="group-list">
                                         <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
                                         <div class="destination-province_content">
-                                         
-                                          <div class="province-map kongo-central">
+                                         @php
+                                           $className = "province-map ".$item->province_name
+                                         @endphp
+                                          <div class="{{$className}}">
                                               @include('layouts.mapfile.mapDestinationProvince')
                                           </div>
                                           <div class="province-desc">
-                                            <a href="{{route('province.article',['province'=>$item->province_name,'id'=>$item->province_article_id,'name'=>$item->province_article_name])}}" class="province-link">{{$item->province_name}}</a>
+                                            <a href="{{route('province.article',['province'=>$item->province_name,'id'=>$item->province_article_id,'name'=>$item->province_article_name])}}" class="province-link"><i class="ri-add-line"></i> {{$item->province_name}}</a>
                                             <div class="province-district">
-                                              <a href="" class="province-district_link">{{$item->province_article_path}}</a>
-                                              <a href="" class="province-district_link">Matadi</a>
-                                              <a href="" class="province-district_link">Cataracte</a>
+                                                 @foreach ($item->ProvinceDivision as $sd_item)
+                                                     <a href="" class="province-district_link"><i class="ri-arrow-right-line"></i>{{$sd_item->province_division_name}}</a>
+                                                 @endforeach
+                                              
+                                             
                                             </div>
                                           </div>
                                         </div>
@@ -205,17 +305,35 @@
                           
                               @endforeach
                               </div>
+                              
+                              
+                              </div>
                              
                           </li>
   
-                          <li class="dropdown-menu__link">
+                                                    <li class="dropdown-menu__link">
                               <span class="dropdown-menu-link__title">
                                 <span class="dropdown-menu-link__titl">
                                 Par Villes <!-- Menu secondaire 1.2 -->
                                 </span>
                               </span>
                               <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
-                              <div class="submenu-dopdown .par-ville">
+                              <div class="submenu-dopdown par-ville">
+                               @php
+                                   $parcitycount=5;
+                                   $parcitydata = [
+                                    ['province'=>"Kinshasa",'city'=>['Kinshasa']],
+                                    ['province'=>"Kongo-central",'city'=>['Boma','Kisantu','Matadi','Mbanwa Ngungu','Moanda']],
+                                    ['province'=>"Kasaï",'city'=>['Mbuji Mayi']],
+                                    ['province'=>"Nord-Kivu",'city'=>['Goma']],
+                                    ['province'=>"Sud-Kivu",'city'=>['Bukavu']],
+                                    ['province'=>"Tshopo",'city'=>['Kisangani']],
+                                    ['province'=>"Lualaba",'city'=>['Kolwezi']],
+                                    ['province'=>"Equateur",'city'=>['Mbandaka']]
+                                    ]
+                               @endphp
+                               <div class="submenu-dropdown-group--container">
+                                @foreach ($provinceLien as $item)
                                 <div class="submenu-dropdown__group">
                                   <div class="submenu-dropdown__group-title">
                                       <div>
@@ -232,14 +350,20 @@
                                           <div class="destination-province_content">
                                            
                                             <div class="province-map kongo-central">
-                                                @include('layouts.mapfile.mapDestinationProvince')
+                                                {{-- @include('layouts.mapfile.mapDestinationProvince') --}}
                                             </div>
                                             <div class="province-desc">
-                                              <a href="#" class="province-link">Kongo Central</a>
+                                              <a href="#" class="province-link"><i class="ri-add-line"></i>{{$item->province_name}}</a>
                                               <div class="province-district">
-                                                <a href="" class="province-district_link">Boma</a>
-                                                <a href="" class="province-district_link">Matadi</a>
-                                                <a href="" class="province-district_link">Cataracte</a>
+                                              @foreach ($item->ProvinceDivision as $sd_item)
+                                                  @foreach ($sd_item->provinceSousDivisionArticle as $sdArticle_item)
+                                                   <a href="{{route('province.division.article',
+                                                   ['province_id'=>$item->province_id,
+                                                    'sd_id'=>$sd_item->province_division_id,
+                                                    'article_id'=>$sdArticle_item->sd_article_id])}}" class="province-district_link"><i class="ri-arrow-right-line"></i>{{$sd_item->province_division_name}}</a>
+                                                     @endforeach
+                                                @endforeach
+                                            
                                               </div>
                                             </div>
                                           </div>
@@ -252,913 +376,8 @@
                                   </div>
                               </div>
 
-                            <div class="submenu-dropdown__group">
-                                <div class="submenu-dropdown__group-title">
-                                    <div>
-                                        <span class="group-icon"></span>
-                                    </div>
-                                        <span class="group-title"></span>
-                                       
-                                    <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                                </div>
-                                <div class="group-container">
-                                   <ul class="group-links">
-                                    <li class="group-list">
-                                        <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                                        <div class="destination-province_content">
-                                          <div class="province-map kinshasa">
-                                            @include('layouts.mapfile.mapDestinationProvince')
-                                          </div>
-                                          <div class="province-desc">
-                                            <a href="#" class="province-link">Kinshasa</a>
-                                            <div class="province-district">
-                                              <a href="" class="province-district_link">Boma</a>
-                                              <a href="" class="province-district_link">Matadi</a>
-                                              <a href="" class="province-district_link">Cataracte</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </li>
-                                    <!-- <li class="group-list">
-                                        <a href="" class="group-link">lien 1.1.1.2</a>
-                                    </li>
-                                     -->
-                                   </ul>
-                                </div>
-                            </div>
-
-                            <div class="submenu-dropdown__group">
-                              <div class="submenu-dropdown__group-title">
-                                  <div>
-                                      <span class="group-icon"></span>
-                                  </div>
-                                      <span class="group-title"></span>
-                                     
-                                  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                              </div>
-                              <div class="group-container">
-                                 <ul class="group-links">
-                                  <li class="group-list">
-                                      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                                      <div class="destination-province_content">
-                                        <div class="province-map bas-uele">
-                                          @include('layouts.mapfile.mapDestinationProvince')
-                                        </div>
-                                        <div class="province-desc">
-                                          <a href="#" class="province-link">Bas-Uélé</a>
-                                          <div class="province-district">
-                                            <a href="" class="province-district_link">Boma</a>
-                                            <a href="" class="province-district_link">Matadi</a>
-                                            <a href="" class="province-district_link">Cataracte</a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                  </li>
-                                  <!-- <li class="group-list">
-                                      <a href="" class="group-link">lien 1.1.1.2</a>
-                                  </li>
-                                   -->
-                                 </ul>
-                              </div>
-                          </div>
-
-                          <div class="submenu-dropdown__group">
-                            <div class="submenu-dropdown__group-title">
-                                <div>
-                                    <span class="group-icon"></span>
-                                </div>
-                                    <span class="group-title"></span>
-                                   
-                                <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                            </div>
-                            <div class="group-container">
-                               <ul class="group-links">
-                                <li class="group-list">
-                                    <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                                    <div class="destination-province_content">
-                                      <div class="province-map equateur">
-                                        @include('layouts.mapfile.mapDestinationProvince')
-                                      </div>
-                                      <div class="province-desc">
-                                        <a href="#" class="province-link">Equateur</a>
-                                        <div class="province-district">
-                                          <a href="" class="province-district_link">Boma</a>
-                                          <a href="" class="province-district_link">Matadi</a>
-                                          <a href="" class="province-district_link">Cataracte</a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </li>
-                                <!-- <li class="group-list">
-                                    <a href="" class="group-link">lien 1.1.1.2</a>
-                                </li>
-                                 -->
-                               </ul>
-                            </div>
-                        </div>
-
-                        <div class="submenu-dropdown__group">
-                          <div class="submenu-dropdown__group-title">
-                              <div>
-                                  <span class="group-icon"></span>
-                              </div>
-                                  <span class="group-title"></span>
-                                 
-                              <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                          </div>
-                          <div class="group-container">
-                             <ul class="group-links">
-                              <li class="group-list">
-                                  <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                                  <div class="destination-province_content">
-                                    <div class="province-map haut-katanga">
-                                      @include('layouts.mapfile.mapDestinationProvince')
-                                    </div>
-                                    <div class="province-desc">
-                                      <a href="#" class="province-link">Kinshasa</a>
-                                      <div class="province-district">
-                                        <a href="" class="province-district_link">Boma</a>
-                                        <a href="" class="province-district_link">Matadi</a>
-                                        <a href="" class="province-district_link">Cataracte</a>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </li>
-                              <!-- <li class="group-list">
-                                  <a href="" class="group-link">lien 1.1.1.2</a>
-                              </li>
-                               -->
-                             </ul>
-                          </div>
-                      </div>
-
-                      <div class="submenu-dropdown__group">
-                        <div class="submenu-dropdown__group-title">
-                            <div>
-                                <span class="group-icon"></span>
-                            </div>
-                                <span class="group-title"></span>
-                               
-                            <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                        </div>
-                        <div class="group-container">
-                           <ul class="group-links">
-                            <li class="group-list">
-                                <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                                <div class="destination-province_content">
-                                  <div class="province-map haut-lomamie">
-                                    @include('layouts.mapfile.mapDestinationProvince')
-                                  </div>
-                                  <div class="province-desc">
-                                    <a href="#" class="province-link">Haut Lomamie</a>
-                                    <div class="province-district">
-                                      <a href="" class="province-district_link">Boma</a>
-                                      <a href="" class="province-district_link">Matadi</a>
-                                      <a href="" class="province-district_link">Cataracte</a>
-                                    </div>
-                                  </div>
-                                </div>
-                            </li>
-                            <!-- <li class="group-list">
-                                <a href="" class="group-link">lien 1.1.1.2</a>
-                            </li>
-                             -->
-                           </ul>
-                        </div>
-                    </div>
-
-                    <div class="submenu-dropdown__group">
-                      <div class="submenu-dropdown__group-title">
-                          <div>
-                              <span class="group-icon"></span>
-                          </div>
-                              <span class="group-title"></span>
-                             
-                          <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                      </div>
-                      <div class="group-container">
-                         <ul class="group-links">
-                          <li class="group-list">
-                              <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                              <div class="destination-province_content">
-                                <div class="province-map haut-uele">
-                                  @include('layouts.mapfile.mapDestinationProvince')
-                                </div>
-                                <div class="province-desc">
-                                  <a href="#" class="province-link">Haut Uele</a>
-                                  <div class="province-district">
-                                    <a href="" class="province-district_link">Boma</a>
-                                    <a href="" class="province-district_link">Matadi</a>
-                                    <a href="" class="province-district_link">Cataracte</a>
-                                  </div>
-                                </div>
-                              </div>
-                          </li>
-                          <!-- <li class="group-list">
-                              <a href="" class="group-link">lien 1.1.1.2</a>
-                          </li>
-                           -->
-                         </ul>
-                      </div>
-                  </div>
-
-                  <div class="submenu-dropdown__group">
-                    <div class="submenu-dropdown__group-title">
-                        <div>
-                            <span class="group-icon"></span>
-                        </div>
-                            <span class="group-title"></span>
-                           
-                        <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                    </div>
-                    <div class="group-container">
-                       <ul class="group-links">
-                        <li class="group-list">
-                            <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                            <div class="destination-province_content">
-                              <div class="province-map iturie">
-                                @include('layouts.mapfile.mapDestinationProvince')
-                              </div>
-                              <div class="province-desc">
-                                <a href="#" class="province-link">Iturie</a>
-                                <div class="province-district">
-                                  <a href="" class="province-district_link">Boma</a>
-                                  <a href="" class="province-district_link">Matadi</a>
-                                  <a href="" class="province-district_link">Cataracte</a>
-                                </div>
-                              </div>
-                            </div>
-                        </li>
-                        <!-- <li class="group-list">
-                            <a href="" class="group-link">lien 1.1.1.2</a>
-                        </li>
-                         -->
-                       </ul>
-                    </div>
-                </div>
-
-                <div class="submenu-dropdown__group">
-                  <div class="submenu-dropdown__group-title">
-                      <div>
-                          <span class="group-icon"></span>
-                      </div>
-                          <span class="group-title"></span>
-                         
-                      <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                  </div>
-                  <div class="group-container">
-                     <ul class="group-links">
-                      <li class="group-list">
-                          <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                          <div class="destination-province_content">
-                            <div class="province-map kwango">
-                              @include('layouts.mapfile.mapDestinationProvince')
-                            </div>
-                            <div class="province-desc">
-                              <a href="#" class="province-link">Kwango</a>
-                              <div class="province-district">
-                                <a href="" class="province-district_link">Boma</a>
-                                <a href="" class="province-district_link">Matadi</a>
-                                <a href="" class="province-district_link">Cataracte</a>
-                              </div>
-                            </div>
-                          </div>
-                      </li>
-                      <!-- <li class="group-list">
-                          <a href="" class="group-link">lien 1.1.1.2</a>
-                      </li>
-                       -->
-                     </ul>
-                  </div>
-              </div>
-
-              <div class="submenu-dropdown__group">
-                <div class="submenu-dropdown__group-title">
-                    <div>
-                        <span class="group-icon"></span>
-                    </div>
-                        <span class="group-title"></span>
-                       
-                    <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                </div>
-                <div class="group-container">
-                   <ul class="group-links">
-                    <li class="group-list">
-                        <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                        <div class="destination-province_content">
-                          <div class="province-map kasai-oriental">
-                            @include('layouts.mapfile.mapDestinationProvince')
-                          </div>
-                          <div class="province-desc">
-                            <a href="#" class="province-link">Kasai Oriental</a>
-                            <div class="province-district">
-                              <a href="" class="province-district_link">Boma</a>
-                              <a href="" class="province-district_link">Matadi</a>
-                              <a href="" class="province-district_link">Cataracte</a>
-                            </div>
-                          </div>
-                        </div>
-                    </li>
-                    <!-- <li class="group-list">
-                        <a href="" class="group-link">lien 1.1.1.2</a>
-                    </li>
-                     -->
-                   </ul>
-                </div>
-            </div>
-
-            <div class="submenu-dropdown__group">
-              <div class="submenu-dropdown__group-title">
-                  <div>
-                      <span class="group-icon"></span>
-                  </div>
-                      <span class="group-title"></span>
-                     
-                  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-              </div>
-              <div class="group-container">
-                 <ul class="group-links">
-                  <li class="group-list">
-                      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                      <div class="destination-province_content">
-                        <div class="province-map kasai">
-                          @include('layouts.mapfile.mapDestinationProvince')
-                        </div>
-                        <div class="province-desc">
-                          <a href="#" class="province-link">Kasai</a>
-                          <div class="province-district">
-                            <a href="" class="province-district_link">Boma</a>
-                            <a href="" class="province-district_link">Matadi</a>
-                            <a href="" class="province-district_link">Cataracte</a>
-                          </div>
-                        </div>
-                      </div>
-                  </li>
-                  <!-- <li class="group-list">
-                      <a href="" class="group-link">lien 1.1.1.2</a>
-                  </li>
-                   -->
-                 </ul>
-              </div>
-          </div>
-
-          <div class="submenu-dropdown__group">
-            <div class="submenu-dropdown__group-title">
-                <div>
-                    <span class="group-icon"></span>
-                </div>
-                    <span class="group-title"></span>
-                   
-                <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-            </div>
-            <div class="group-container">
-               <ul class="group-links">
-                <li class="group-list">
-                    <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                    <div class="destination-province_content">
-                      <div class="province-map kwilu">
-                        @include('layouts.mapfile.mapDestinationProvince')
-                      </div>
-                      <div class="province-desc">
-                        <a href="#" class="province-link">Kwilu</a>
-                        <div class="province-district">
-                          <a href="" class="province-district_link">Boma</a>
-                          <a href="" class="province-district_link">Matadi</a>
-                          <a href="" class="province-district_link">Cataracte</a>
-                        </div>
-                      </div>
-                    </div>
-                </li>
-                <!-- <li class="group-list">
-                    <a href="" class="group-link">lien 1.1.1.2</a>
-                </li>
-                 -->
-               </ul>
-            </div>
-        </div>
-
-        <div class="submenu-dropdown__group">
-          <div class="submenu-dropdown__group-title">
-              <div>
-                  <span class="group-icon"></span>
-              </div>
-                  <span class="group-title"></span>
-                 
-              <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-          </div>
-          <div class="group-container">
-             <ul class="group-links">
-              <li class="group-list">
-                  <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                  <div class="destination-province_content">
-                    <div class="province-map lualaba">
-                      @include('layouts.mapfile.mapDestinationProvince')
-                    </div>
-                    <div class="province-desc">
-                      <a href="#" class="province-link">Lualaba</a>
-                      <div class="province-district">
-                        <a href="" class="province-district_link">Boma</a>
-                        <a href="" class="province-district_link">Matadi</a>
-                        <a href="" class="province-district_link">Cataracte</a>
-                      </div>
-                    </div>
-                  </div>
-              </li>
-              <!-- <li class="group-list">
-                  <a href="" class="group-link">lien 1.1.1.2</a>
-              </li>
-               -->
-             </ul>
-          </div>
-      </div>
-
-      <div class="submenu-dropdown__group">
-        <div class="submenu-dropdown__group-title">
-            <div>
-                <span class="group-icon"></span>
-            </div>
-                <span class="group-title"></span>
-               
-            <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-        </div>
-        <div class="group-container">
-           <ul class="group-links">
-            <li class="group-list">
-                <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-                <div class="destination-province_content">
-                  <div class="province-map kasai-central">
-                    @include('layouts.mapfile.mapDestinationProvince')
-                  </div>
-                  <div class="province-desc">
-                    <a href="#" class="province-link">Kasai Central</a>
-                    <div class="province-district">
-                      <a href="" class="province-district_link">Boma</a>
-                      <a href="" class="province-district_link">Matadi</a>
-                      <a href="" class="province-district_link">Cataracte</a>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <!-- <li class="group-list">
-                <a href="" class="group-link">lien 1.1.1.2</a>
-            </li>
-             -->
-           </ul>
-        </div>
-    </div>
-
-    <div class="submenu-dropdown__group">
-      <div class="submenu-dropdown__group-title">
-          <div>
-              <span class="group-icon"></span>
-          </div>
-              <span class="group-title"></span>
-             
-          <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-      </div>
-      <div class="group-container">
-         <ul class="group-links">
-          <li class="group-list">
-              <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-              <div class="destination-province_content">
-                <div class="province-map lomami">
-                  @include('layouts.mapfile.mapDestinationProvince')
-                </div>
-                <div class="province-desc">
-                  <a href="#" class="province-link">Lomami</a>
-                  <div class="province-district">
-                    <a href="" class="province-district_link">Boma</a>
-                    <a href="" class="province-district_link">Matadi</a>
-                    <a href="" class="province-district_link">Cataracte</a>
-                  </div>
-                </div>
-              </div>
-          </li>
-          <!-- <li class="group-list">
-              <a href="" class="group-link">lien 1.1.1.2</a>
-          </li>
-           -->
-         </ul>
-      </div>
-  </div>
-
-  <div class="submenu-dropdown__group">
-    <div class="submenu-dropdown__group-title">
-        <div>
-            <span class="group-icon"></span>
-        </div>
-            <span class="group-title"></span>
-           
-        <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-    </div>
-    <div class="group-container">
-       <ul class="group-links">
-        <li class="group-list">
-            <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-            <div class="destination-province_content">
-              <div class="province-map mai-dombe">
-                @include('layouts.mapfile.mapDestinationProvince')
-              </div>
-              <div class="province-desc">
-                <a href="#" class="province-link">Mai Dombe</a>
-                <div class="province-district">
-                  <a href="" class="province-district_link">Boma</a>
-                  <a href="" class="province-district_link">Matadi</a>
-                  <a href="" class="province-district_link">Cataracte</a>
-                </div>
-              </div>
-            </div>
-        </li>
-        <!-- <li class="group-list">
-            <a href="" class="group-link">lien 1.1.1.2</a>
-        </li>
-         -->
-       </ul>
-    </div>
-</div>
-
-<div class="submenu-dropdown__group">
-  <div class="submenu-dropdown__group-title">
-      <div>
-          <span class="group-icon"></span>
-      </div>
-          <span class="group-title"></span>
-         
-      <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-  </div>
-  <div class="group-container">
-     <ul class="group-links">
-      <li class="group-list">
-          <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-          <div class="destination-province_content">
-            <div class="province-map maniema">
-              @include('layouts.mapfile.mapDestinationProvince')
-            </div>
-            <div class="province-desc">
-              <a href="#" class="province-link">Maniema</a>
-              <div class="province-district">
-                <a href="" class="province-district_link">Boma</a>
-                <a href="" class="province-district_link">Matadi</a>
-                <a href="" class="province-district_link">Cataracte</a>
-              </div>
-            </div>
-          </div>
-      </li>
-      <!-- <li class="group-list">
-          <a href="" class="group-link">lien 1.1.1.2</a>
-      </li>
-       -->
-     </ul>
-  </div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-    <div>
-        <span class="group-icon"></span>
-    </div>
-        <span class="group-title"></span>
-       
-    <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
-   <ul class="group-links">
-    <li class="group-list">
-        <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-        <div class="destination-province_content">
-          <div class="province-map mongala">
-            @include('layouts.mapfile.mapDestinationProvince')
-          </div>
-          <div class="province-desc">
-            <a href="#" class="province-link">Mongala</a>
-            <div class="province-district">
-              <a href="" class="province-district_link">Boma</a>
-              <a href="" class="province-district_link">Matadi</a>
-              <a href="" class="province-district_link">Cataracte</a>
-            </div>
-          </div>
-        </div>
-    </li>
-    <!-- <li class="group-list">
-        <a href="" class="group-link">lien 1.1.1.2</a>
-    </li>
-     -->
-   </ul>
-</div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-  <div>
-      <span class="group-icon"></span>
-  </div>
-      <span class="group-title"></span>
-     
-  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
- <ul class="group-links">
-  <li class="group-list">
-      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-      <div class="destination-province_content">
-        <div class="province-map nord-kivu">
-          @include('layouts.mapfile.mapDestinationProvince')
-        </div>
-        <div class="province-desc">
-          <a href="#" class="province-link">Nord Kivu</a>
-          <div class="province-district">
-            <a href="" class="province-district_link">Boma</a>
-            <a href="" class="province-district_link">Matadi</a>
-            <a href="" class="province-district_link">Cataracte</a>
-          </div>
-        </div>
-      </div>
-  </li>
-  <!-- <li class="group-list">
-      <a href="" class="group-link">lien 1.1.1.2</a>
-  </li>
-   -->
- </ul>
-</div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-  <div>
-      <span class="group-icon"></span>
-  </div>
-      <span class="group-title"></span>
-     
-  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
- <ul class="group-links">
-  <li class="group-list">
-      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-      <div class="destination-province_content">
-        <div class="province-map nord-ubangi">
-          @include('layouts.mapfile.mapDestinationProvince')
-        </div>
-        <div class="province-desc">
-          <a href="#" class="province-link">Nord Ubangi</a>
-          <div class="province-district">
-            <a href="" class="province-district_link">Boma</a>
-            <a href="" class="province-district_link">Matadi</a>
-            <a href="" class="province-district_link">Cataracte</a>
-          </div>
-        </div>
-      </div>
-  </li>
-  <!-- <li class="group-list">
-      <a href="" class="group-link">lien 1.1.1.2</a>
-  </li>
-   -->
- </ul>
-</div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-  <div>
-      <span class="group-icon"></span>
-  </div>
-      <span class="group-title"></span>
-     
-  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
- <ul class="group-links">
-  <li class="group-list">
-      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-      <div class="destination-province_content">
-        <div class="province-map sud-kivu">
-          @include('layouts.mapfile.mapDestinationProvince')
-        </div>
-        <div class="province-desc">
-          <a href="#" class="province-link">Sud Kivu</a>
-          <div class="province-district">
-            <a href="" class="province-district_link">Boma</a>
-            <a href="" class="province-district_link">Matadi</a>
-            <a href="" class="province-district_link">Cataracte</a>
-          </div>
-        </div>
-      </div>
-  </li>
-  <!-- <li class="group-list">
-      <a href="" class="group-link">lien 1.1.1.2</a>
-  </li>
-   -->
- </ul>
-</div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-  <div>
-      <span class="group-icon"></span>
-  </div>
-      <span class="group-title"></span>
-     
-  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
- <ul class="group-links">
-  <li class="group-list">
-      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-      <div class="destination-province_content">
-        <div class="province-map sankuru">
-          @include('layouts.mapfile.mapDestinationProvince')
-        </div>
-        <div class="province-desc">
-          <a href="#" class="province-link">Sankuru</a>
-          <div class="province-district">
-            <a href="" class="province-district_link">Boma</a>
-            <a href="" class="province-district_link">Matadi</a>
-            <a href="" class="province-district_link">Cataracte</a>
-          </div>
-        </div>
-      </div>
-  </li>
-  <!-- <li class="group-list">
-      <a href="" class="group-link">lien 1.1.1.2</a>
-  </li>
-   -->
- </ul>
-</div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-  <div>
-      <span class="group-icon"></span>
-  </div>
-      <span class="group-title"></span>
-     
-  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
- <ul class="group-links">
-  <li class="group-list">
-      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-      <div class="destination-province_content">
-        <div class="province-map sud-ubangi">
-          @include('layouts.mapfile.mapDestinationProvince')
-        </div>
-        <div class="province-desc">
-          <a href="#" class="province-link">Sud Ubangi</a>
-          <div class="province-district">
-            <a href="" class="province-district_link">Boma</a>
-            <a href="" class="province-district_link">Matadi</a>
-            <a href="" class="province-district_link">Cataracte</a>
-          </div>
-        </div>
-      </div>
-  </li>
-  <!-- <li class="group-list">
-      <a href="" class="group-link">lien 1.1.1.2</a>
-  </li>
-   -->
- </ul>
-</div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-  <div>
-      <span class="group-icon"></span>
-  </div>
-      <span class="group-title"></span>
-     
-  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
- <ul class="group-links">
-  <li class="group-list">
-      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-      <div class="destination-province_content">
-        <div class="province-map tanganyika">
-          @include('layouts.mapfile.mapDestinationProvince')
-        </div>
-        <div class="province-desc">
-          <a href="#" class="province-link">Tanganyika</a>
-          <div class="province-district">
-            <a href="" class="province-district_link">Boma</a>
-            <a href="" class="province-district_link">Matadi</a>
-            <a href="" class="province-district_link">Cataracte</a>
-          </div>
-        </div>
-      </div>
-  </li>
-  <!-- <li class="group-list">
-      <a href="" class="group-link">lien 1.1.1.2</a>
-  </li>
-   -->
- </ul>
-</div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-  <div>
-      <span class="group-icon"></span>
-  </div>
-      <span class="group-title"></span>
-     
-  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
- <ul class="group-links">
-  <li class="group-list">
-      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-      <div class="destination-province_content">
-        <div class="province-map tshopo">
-          @include('layouts.mapfile.mapDestinationProvince')
-        </div>
-        <div class="province-desc">
-          <a href="#" class="province-link">Tshopo</a>
-          <div class="province-district">
-            <a href="" class="province-district_link">Boma</a>
-            <a href="" class="province-district_link">Matadi</a>
-            <a href="" class="province-district_link">Cataracte</a>
-          </div>
-        </div>
-      </div>
-  </li>
-  <!-- <li class="group-list">
-      <a href="" class="group-link">lien 1.1.1.2</a>
-  </li>
-   -->
- </ul>
-</div>
-</div>
-<div class="submenu-dropdown__group">
-<div class="submenu-dropdown__group-title">
-  <div>
-      <span class="group-icon"></span>
-  </div>
-      <span class="group-title"></span>
-     
-  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-</div>
-<div class="group-container">
- <ul class="group-links">
-  <li class="group-list">
-      <!-- <a href="" class="group-link">lien 1.1.1.1</a> -->
-      <div class="destination-province_content">
-        <div class="province-map tshuapa">
-          @include('layouts.mapfile.mapDestinationProvince')
-        </div>
-        <div class="province-desc">
-          <a href="#" class="province-link">Tshuapa</a>
-          <div class="province-district">
-            <a href="" class="province-district_link">Boma</a>
-            <a href="" class="province-district_link">Matadi</a>
-            <a href="" class="province-district_link">Cataracte</a>
-          </div>
-        </div>
-      </div>
-  </li>
-  <!-- <li class="group-list">
-      <a href="" class="group-link">lien 1.1.1.2</a>
-  </li>
-   -->
- </ul>
-</div>
-</div>
-                            <div class="menu-partenaires__marquee-container" >
-                              <div class="marquee">
-                                <ul class="marquee-elmts">
-                                    <li>
-                                      <div class="menu-marquee__image">
-                                         <img src="{{url('assets/images/menu_marquee/lola-ya-bonobo.webp')}}" alt="" class="menu-marquee__img">
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div class="menu-marquee__image">
-                                        <img src="{{url('assets/images/menu_marquee/aqua-splash.jpg')}}" alt="" class="menu-marquee__img">
-                                     </div>
-                                    </li>
-                                    <li>
-                                      <div class="menu-marquee__image">
-                                      <img src="{{url('assets/images/menu_marquee/virunga.webp')}}" alt="" class="menu-marquee__img">
-                                   </div>
-                                  </li>
-                                    <li>
-                                      <div class="menu-marquee__image">
-                                        <img src="{{url('assets/images/menu_marquee/lola-ya-bonobo.webp')}}" alt="" class="menu-marquee__img">
-                                     </div>
-                                    </li>
-                                    <li>
-                                      <div class="menu-marquee__image">
-                                        <img src="{{url('assets/images/menu_marquee/aqua-splash.jpg')}}" alt="" class="menu-marquee__img">
-                                     </div>
-                                    </li>
-                                    <li>
-                                      <div class="menu-marquee__image">
-                                        <img src="{{url('assets/images/menu_marquee/virunga.webp')}}" alt="" class="menu-marquee__img">
-                                     </div>
-                                    </li>
-                                    <li>
-                                      <div class="menu-marquee__image">
-                                        <img src="{{url('assets/images/menu_marquee/lola-ya-bonobo.webp')}}" alt="" class="menu-marquee__img">
-                                     </div>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                            </div>
+                               @endforeach
+                            
                               </div>
                           </li>
 
@@ -1170,6 +389,8 @@
                             </span>
                             <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                             <div class="submenu-dopdown theme-voyage">
+                                <div class="submenu-dropdown-group--container">
+                                    
                                 <div class="submenu-dropdown__group">
                                     <div class="submenu-dropdown__group-title">
                                         <div>
@@ -1212,13 +433,13 @@
                                         </div>
 
                                         <div class="theme-voyage__lists">
-                                          <span class="theme-voyage-title">Tradition</span>
+                                          <span class="theme-voyage-title">Mines</span>
                                          <div class='theme-voyage__content'>
-                                         <a class="theme-voyage__link">link 1</a>
-                                         <a class="theme-voyage__link">link 2</a>
-                                         <a class="theme-voyage__link">link 3</a>
-                                         <a class="theme-voyage__link">link 4</a>
-                                         <a class="theme-voyage__link">link 5</a>
+                                         <a class="theme-voyage__link">Kolwezi</a>
+                                         <a class="theme-voyage__link">Lubumbashie</a>
+                                         <a class="theme-voyage__link">Maniema</a>
+                                         <a class="theme-voyage__link">Kasaï</a>
+                                        
                                          {{-- <> --}}
                                          </div>
                                          
@@ -1228,6 +449,17 @@
                                       <div class="theme-voyage__lists">
                                         <span class="theme-voyage-title">Cuisine</span>
                                        <div class='theme-voyage__content'>
+                                       <a class="theme-voyage__link">Cuisine Française</a>
+                                       <a class="theme-voyage__link">Cuisine Italienne</a>
+                                       <a class="theme-voyage__link">Cuisine Chinoise</a>
+                                        <a class="theme-voyage__link">Cuisine Congolaise</a>
+                                       {{-- <> --}}
+                                       </div>
+                                    </div>
+                                    
+                                    <div class="theme-voyage__lists">
+                                        <span class="theme-voyage-title">Art</span>
+                                       <div class='theme-voyage__content'>
                                        <a class="theme-voyage__link">link 1</a>
                                        <a class="theme-voyage__link">link 2</a>
                                        <a class="theme-voyage__link">link 3</a>
@@ -1236,42 +468,22 @@
                                        {{-- <> --}}
                                        </div>
                                     </div>
-
+                                    
                                     <div class="theme-voyage__lists">
-                                      <span class="theme-voyage-title">Art</span>
-                                     <div class='theme-voyage__content'>
-                                     <a class="theme-voyage__link">link 1</a>
-                                     <a class="theme-voyage__link">link 2</a>
-                                     <a class="theme-voyage__link">link 3</a>
-                                     <a class="theme-voyage__link">link 4</a>
-                                     <a class="theme-voyage__link">link 5</a>
-                                     {{-- <> --}}
-                                     </div>
-                                  </div>
+                                        <span class="theme-voyage-title">Villes</span>
+                                       <div class='theme-voyage__content'>
+                                       <a class="theme-voyage__link">Kinshasa</a>
+                                       <a class="theme-voyage__link">Moanda</a>
+                                       <a class="theme-voyage__link">Kinsantu</a>
+                                       <a class="theme-voyage__link">Goma</a>
+                                        <a class="theme-voyage__link">Kolwezi</a>
+                                       <a class="theme-voyage__link"></a>
+                                       {{-- <> --}}
+                                       </div>
+                                    </div>
 
-                                  <div class="theme-voyage__lists">
-                                    <span class="theme-voyage-title">Relaxation</span>
-                                   <div class='theme-voyage__content'>
-                                   <a class="theme-voyage__link">link 1</a>
-                                   <a class="theme-voyage__link">link 2</a>
-                                   <a class="theme-voyage__link">link 3</a>
-                                   <a class="theme-voyage__link">link 4</a>
-                                   <a class="theme-voyage__link">link 5</a>
-                                   {{-- <> --}}
-                                   </div>
-                                </div>
-
-                                <div class="theme-voyage__lists">
-                                  <span class="theme-voyage-title">Ville</span>
-                                 <div class='theme-voyage__content'>
-                                 <a class="theme-voyage__link">link 1</a>
-                                 <a class="theme-voyage__link">link 2</a>
-                                 <a class="theme-voyage__link">link 3</a>
-                                 <a class="theme-voyage__link">link 4</a>
-                                 <a class="theme-voyage__link">link 5</a>
-                                 {{-- <> --}}
-                                 </div>
-                              </div>
+                                    
+                                
 
                                         </li>
                                        </ul>
@@ -1292,175 +504,30 @@
                                        <ul class="group-links">
                                         <li class="group-list">
                                            <div class="voyage-theme__img">
-                                             <img src="{{url('assets/images/destination/parVille/okapi.jpg')}}" alt="" class="voyage-theme__image">
+                                           <a href='' > <img src="{{url('assets/images/destination/parVille/okapi.jpg')}}" alt="" class="voyage-theme__image"> </a>
                                            </div>
                                            <div class="voyage-theme__img">
-                                            <img src="{{url('assets/images/destination/parVille/pullman2.jpg')}}" alt="" class="voyage-theme__image">
+                                           <a href='' > <img src="{{url('assets/images/destination/parVille/pullman2.jpg')}}" alt="" class="voyage-theme__image"> </a>
                                           </div>
                                           <div class="voyage-theme__img">
-                                            <img src="{{url('assets/images/destination/parVille/ruwenzori-3.jpg')}}" alt="" class="voyage-theme__image">
+                                           <a href='' > <img src="{{url('assets/images/destination/parVille/ruwenzori-3.jpg')}}" alt="" class="voyage-theme__image"> </a>
                                           </div>
                                           <div class="voyage-theme__img">
-                                            <img src="{{url('assets/images/destination/parVille/okapi.jpg')}}" alt="" class="voyage-theme__image">
+                                           <a href='' > <img src="{{url('assets/images/destination/parVille/okapi.jpg')}}" alt="" class="voyage-theme__image"> </a>
                                           </div>
                                         </li>
                                        </ul>
                                     </div>
                                 </div>
-
+                  
+                                </div>
                                 
                             </div>
                         </li>
-
-                        <li class="dropdown-menu__link">
-                          <span class="dropdown-menu-link__title">
-                            <span class="dropdown-menu-link__titl">
-                            Types de Séjour <!-- Menu secondaire 1.2 -->
-                            </span>
-                          </span>
-                          <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
-                          <div class="submenu-dopdown type-sejour">
-                              
-                            <div class="submenu-dropdown__group">
-                              <div class="submenu-dropdown__group-title">
-                                  <div>
-                                      {{-- <span class="group-icon"><i class="ri-home-gear-line"></i></span> --}}
-                                  </div>
-
-                                  <span class="group-title"></span>
-                                  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                                  <span class="group-icon"></span>
-                              </div>
-                              <div class="group-container">
-                                 <ul class="group-links">
-                                  <li class="group-list">
-                                     <div class="type-sejour__lists">
-                                         <span class="theme-voyage-title">Nature</span>
-                                        <div class='type-sejour__content'>
-                                        <a class="theme-voyage__link">link 1</a>
-                                        <a class="theme-voyage__link">link 2</a>
-                                        <a class="theme-voyage__link">link 3</a>
-                                        <a class="theme-voyage__link">link 4</a>
-                                        <a class="theme-voyage__link">link 5</a>
-                                        {{-- <> --}}
-                                        </div>
-                                        
-                                    
-                                     </div>
-
-                                     <div class="type-sejour__lists">
-                                      <span class="theme-voyage-title">Plein air</span>
-                                     <div class='type-sejour__content'>
-                                     <a class="theme-voyage__link">link 1</a>
-                                     <a class="theme-voyage__link">link 2</a>
-                                     <a class="theme-voyage__link">link 3</a>
-                                     <a class="theme-voyage__link">link 4</a>
-                                     <a class="theme-voyage__link">link 5</a>
-                                     {{-- <> --}}
-                                     </div>
-                                     
-                                 
-                                  </div>
-
-                                  <div class="type-sejour__lists">
-                                    <span class="theme-voyage-title">Tradition</span>
-                                   <div class='type-sejour__content'>
-                                   <a class="theme-voyage__link">link 1</a>
-                                   <a class="theme-voyage__link">link 2</a>
-                                   <a class="theme-voyage__link">link 3</a>
-                                   <a class="theme-voyage__link">link 4</a>
-                                   <a class="theme-voyage__link">link 5</a>
-                                   {{-- <> --}}
-                                   </div>
-                                   
-                               
-                                </div>
-
-                                <div class="type-sejour__lists">
-                                  <span class="theme-voyage-title">Cuisine</span>
-                                 <div class='type-sejour__content'>
-                                 <a class="theme-voyage__link">link 1</a>
-                                 <a class="theme-voyage__link">link 2</a>
-                                 <a class="theme-voyage__link">link 3</a>
-                                 <a class="theme-voyage__link">link 4</a>
-                                 <a class="theme-voyage__link">link 5</a>
-                                 {{-- <> --}}
-                                 </div>
-                              </div>
-
-                              <div class="type-sejour__lists">
-                                <span class="theme-voyage-title">Art</span>
-                               <div class='type-sejour__content'>
-                               <a class="theme-voyage__link">link 1</a>
-                               <a class="theme-voyage__link">link 2</a>
-                               <a class="theme-voyage__link">link 3</a>
-                               <a class="theme-voyage__link">link 4</a>
-                               <a class="theme-voyage__link">link 5</a>
-                               {{-- <> --}}
-                               </div>
-                            </div>
-
-                            <div class="type-sejour__lists">
-                              <span class="theme-voyage-title">Relaxation</span>
-                             <div class='type-sejour__content'>
-                             <a class="theme-voyage__link">link 1</a>
-                             <a class="theme-voyage__link">link 2</a>
-                             <a class="theme-voyage__link">link 3</a>
-                             <a class="theme-voyage__link">link 4</a>
-                             <a class="theme-voyage__link">link 5</a>
-                             {{-- <> --}}
-                             </div>
-                          </div>
-
-                          <div class="type-sejour__lists">
-                            <span class="theme-voyage-title">Ville</span>
-                           <div class='type-sejour__content'>
-                           <a class="theme-voyage__link">link 1</a>
-                           <a class="theme-voyage__link">link 2</a>
-                           <a class="theme-voyage__link">link 3</a>
-                           <a class="theme-voyage__link">link 4</a>
-                           <a class="theme-voyage__link">link 5</a>
-                           {{-- <> --}}
-                           </div>
-                        </div>
-
-                                  </li>
-                                 </ul>
-                              </div>
-                          </div>
-
-                          <div class="submenu-dropdown__group">
-                              <div class="submenu-dropdown__group-title">
-                                  <div>
-                                      {{-- <span class="group-icon"><i class="ri-home-gear-line"></i></span> --}}
-                                  </div>
-
-                                  <span class="group-title"></span>
-                                  <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
-                                  <span class="group-icon"></span>
-                              </div>
-                              <div class="group-container">
-                                 <ul class="group-links">
-                                  <li class="group-list">
-                                     <div class="type-sejour__img">
-                                       <img src="{{url('assets/images/destination/parVille/ruwenzori-3.jpg')}}" alt="" class="type-sejour__image">
-                                     </div>
-                                     <div class="type-sejour__img">
-                                      <img src="{{url('assets/images/destination/parVille/okapi.jpg')}}" alt="" class="type-sejour__image">
-                                    </div>
-                                  
-                                  </li>
-                                 </ul>
-                              </div>
-                          </div>
-
-   
-
-                          </div>
-                      </li>
                         </ul>
                       </div>
                   </li>
+                 
                  
                   <li class="menu__link menu-principal__3">
                       <div class="menu-link__container">
@@ -1478,6 +545,8 @@
                             </span>
                             <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                             <div class="submenu-dopdown">
+                                <div class="submenu-dropdown-group--container">
+                                
                                 <div class="submenu-dropdown__group">
                                     <div class="submenu-dropdown__group-title">
                                         <div>
@@ -1494,64 +563,30 @@
                                           {{-- ici sera  --}}
 
                                           <div class="se-preparer_link-content">
-                                          <span class="se-preparer_title">title 1</span>
+                                          <span class="se-preparer_title"><i class="ri-add-line"></i>Les lieux emblématiques</span>
                                           <div class="se-preparer__links-container">
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> L'échangeur de Kinshasa</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> La gare centrale de Kinshasa</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Le jardin Botanique de Kinsantu</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Le pont Maréchal</a>
+                                           
                                           </div>
                                           </div>
 
                                           <div class="se-preparer_link-content">
-                                            <span class="se-preparer_title">title 1</span>
+                                            <span class="se-preparer_title"><i class="ri-add-line"></i>Saisons, Topographie, Climats</span>
                                             <div class="se-preparer__links-container">
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
+                                              <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Saison des pluies</a>
+                                              <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Saison seche</a>
+                                              <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Topographie</a>
+                                              
                                             </div>
                                             </div>
 
-                                            <div class="se-preparer_link-content">
-                                              <span class="se-preparer_title">title 1</span>
-                                              <div class="se-preparer__links-container">
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                              </div>
-                                              </div>
+                                            
 
-                                              <div class="se-preparer_link-content">
-                                                <span class="se-preparer_title">title 1</span>
-                                                <div class="se-preparer__links-container">
-                                                  <a class="se-preparer_link" href="" >link1</a>
-                                                  <a class="se-preparer_link" href="" >link1</a>
-                                                  <a class="se-preparer_link" href="" >link1</a>
-                                                  <a class="se-preparer_link" href="" >link1</a>
-                                                  <a class="se-preparer_link" href="" >link1</a>
-                                                  <a class="se-preparer_link" href="" >link1</a>
-                                                </div>
-                                                </div>
-
-                                                <div class="se-preparer_link-content">
-                                                  <span class="se-preparer_title">title 1</span>
-                                                  <div class="se-preparer__links-container">
-                                                    <a class="se-preparer_link" href="" >link1</a>
-                                                    <a class="se-preparer_link" href="" >link1</a>
-                                                    <a class="se-preparer_link" href="" >link1</a>
-                                                    <a class="se-preparer_link" href="" >link1</a>
-                                                    <a class="se-preparer_link" href="" >link1</a>
-                                                    <a class="se-preparer_link" href="" >link1</a>
-                                                  </div>
-                                                  </div>
+                                        
+                                               
                                         </li>
                                        </ul>
                                     </div>
@@ -1571,25 +606,27 @@
                                         <li class="group-list">
                                          {{-- ici sera --}}
                                          <div class="se-preparer_images">
-                                          <img src="{{url('assets/images/sePreparer/aProposRdc/ruwenzori-3.jpg')}}" class="se-preparer_img" alt="" />
+                                         <a href=''> <img src="{{url('assets/images/sePreparer/aProposRdc/ruwenzori-3.jpg')}}" class="se-preparer_img" alt="" /></a>
                                         <span class="se-preparer-img-desc">lien descr </span>
                                          </div>
                                          <div class="se-preparer_images">
-                                          <img src="{{url('assets/images/sePreparer/aProposRdc/ruwenzori-3.jpg')}}" class="se-preparer_img" alt="" />
+                                           <a href=''><img src="{{url('assets/images/sePreparer/aProposRdc/ruwenzori-3.jpg')}}" class="se-preparer_img" alt="" /> </a>
                                           <span class="se-preparer-img-desc">lien descr </span>
                                          </div>
                                          <div class="se-preparer_images">
-                                          <img src="{{url('assets/images/sePreparer/aProposRdc/ruwenzori-3.jpg')}}" class="se-preparer_img" alt="" />
+                                          <a href=''> <img src="{{url('assets/images/sePreparer/aProposRdc/ruwenzori-3.jpg')}}" class="se-preparer_img" alt="" /> </a>
                                           <span class="se-preparer-img-desc">lien descr </span>
                                          </div>
                                          <div class="se-preparer_images">
-                                          <img src="{{url('assets/images/sePreparer/aProposRdc/ruwenzori-3.jpg')}}" class="se-preparer_img" alt="" />
+                                           <a href=''><img src="{{url('assets/images/sePreparer/aProposRdc/ruwenzori-3.jpg')}}" class="se-preparer_img" alt="" /> </a>
                                           <span class="se-preparer-img-desc">lien descr </span>
                                          </div>
 
                                         </li>
                                        </ul>
                                     </div>
+                                </div>
+                                
                                 </div>
                             </div>
                         </li>
@@ -1602,6 +639,9 @@
                             </span>
                             <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                             <div class="submenu-dopdown">
+                                
+                                <div class="submenu-dropdown-group--container">
+                                
                               <div class="submenu-dropdown__group">
                                   <div class="submenu-dropdown__group-title">
                                       <div>
@@ -1618,52 +658,39 @@
                                         {{-- ici sera  --}}
 
                                         <div class="se-preparer_link-content">
-                                        <span class="se-preparer_title">title 1</span>
+                                       
                                         <div class="se-preparer__links-container">
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Venir en RD. Congo</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Passeport et formalités</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Assurances voyage</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Wifi et connectivité</a>
+                                           <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Applications utiles</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> 10 choses à savoir avant de partir</a>
+                                             <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> Conseils généreaux</a>
                                         </div>
                                         </div>
 
                                         <div class="se-preparer_link-content">
-                                          <span class="se-preparer_title">title 1</span>
+                                         
                                           <div class="se-preparer__links-container">
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i>Guides touristiques</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i>Agence des voyages</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i>Tour opérateur</a>
+                                            
                                           </div>
                                           </div>
 
                                           <div class="se-preparer_link-content">
-                                            <span class="se-preparer_title">title 1</span>
+                                           
                                             <div class="se-preparer__links-container">
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
+                                              <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i>Brochures touristiques</a>
+                                              <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i>lignes téléphonique d'assistance aux visiteurs</a>
+                                              <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i>link1</a>
+                                             
                                             </div>
                                             </div>
 
-                                            <div class="se-preparer_link-content">
-                                              <span class="se-preparer_title">title 1</span>
-                                              <div class="se-preparer__links-container">
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                                <a class="se-preparer_link" href="" >link1</a>
-                                              </div>
-                                              </div>
+                                           
                                       </li>
                                      </ul>
                                   </div>
@@ -1703,6 +730,9 @@
                                      </ul>
                                   </div>
                               </div>
+                              
+                              </div>
+                              
                           </div>
                         </li>
 
@@ -1714,6 +744,9 @@
                           </span>
                           <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                           <div class="submenu-dopdown">
+                              
+                              <div class="submenu-dropdown-group--container">
+                                  
                             <div class="submenu-dropdown__group">
                                 <div class="submenu-dropdown__group-title">
                                     <div>
@@ -1730,49 +763,33 @@
                                       {{-- ici sera  --}}
 
                                       <div class="se-preparer_link-content">
-                                      <span class="se-preparer_title">title 1</span>
+                                      
                                       <div class="se-preparer__links-container">
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
+                                        <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                        <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                        <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                       
                                       </div>
                                       </div>
                                       <div class="se-preparer_link-content">
-                                        <span class="se-preparer_title">title 1</span>
+                                       
                                         <div class="se-preparer__links-container">
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                          
                                         </div>
                                         </div>
                                         <div class="se-preparer_link-content">
-                                          <span class="se-preparer_title">title 1</span>
+                                          
                                           <div class="se-preparer__links-container">
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                            
                                           </div>
                                           </div>
-                                          <div class="se-preparer_link-content">
-                                            <span class="se-preparer_title">title 1</span>
-                                            <div class="se-preparer__links-container">
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                            </div>
-                                            </div>
+                                          
                                     </li>
                                    </ul>
                                 </div>
@@ -1812,6 +829,8 @@
                                    </ul>
                                 </div>
                             </div>
+                            
+                            </div>
                         </div>
                       </li>
 
@@ -1823,6 +842,9 @@
                         </span>
                         <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                         <div class="submenu-dopdown">
+                            
+                            <div class="submenu-dropdown-group--container">
+                            
                           <div class="submenu-dropdown__group">
                               <div class="submenu-dropdown__group-title">
                                   <div>
@@ -1839,60 +861,42 @@
                                     {{-- ici sera  --}}
 
                                     <div class="se-preparer_link-content">
-                                    <span class="se-preparer_title">title 1</span>
+                                    <span class="se-preparer_title"><i class="ri-add-line"></i>title 1</span>
                                     <div class="se-preparer__links-container">
-                                      <a class="se-preparer_link" href="" >link1</a>
-                                      <a class="se-preparer_link" href="" >link1</a>
-                                      <a class="se-preparer_link" href="" >link1</a>
-                                      <a class="se-preparer_link" href="" >link1</a>
-                                      <a class="se-preparer_link" href="" >link1</a>
-                                      <a class="se-preparer_link" href="" >link1</a>
+                                      <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                      <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                      <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                      
                                     </div>
                                     </div>
                                     <div class="se-preparer_link-content">
-                                      <span class="se-preparer_title">title 1</span>
+                                      <span class="se-preparer_title"><i class="ri-add-line"></i>title 1</span>
                                       <div class="se-preparer__links-container">
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
-                                        <a class="se-preparer_link" href="" >link1</a>
+                                        <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                        <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                        <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                        
                                       </div>
                                       </div>
                                       <div class="se-preparer_link-content">
-                                        <span class="se-preparer_title">title 1</span>
+                                        <span class="se-preparer_title"><i class="ri-add-line"></i>title 1</span>
                                         <div class="se-preparer__links-container">
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
-                                          <a class="se-preparer_link" href="" >link1</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                          <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                          
                                         </div>
                                         </div>
                                         <div class="se-preparer_link-content">
-                                          <span class="se-preparer_title">title 1</span>
+                                          <span class="se-preparer_title"><i class="ri-add-line"></i>title 1</span>
                                           <div class="se-preparer__links-container">
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
-                                            <a class="se-preparer_link" href="" >link1</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                            <a class="se-preparer_link" href="" ><i class="ri-arrow-right-line"></i> link1</a>
+                                            
                                           </div>
                                           </div>
-                                          <div class="se-preparer_link-content">
-                                            <span class="se-preparer_title">title 1</span>
-                                            <div class="se-preparer__links-container">
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                              <a class="se-preparer_link" href="" >link1</a>
-                                            </div>
-                                            </div>
+                                          
                                   </li>
                                  </ul>
                               </div>
@@ -1932,6 +936,8 @@
                                  </ul>
                               </div>
                           </div>
+                          
+                          </div>
                       </div>
                     </li>
                       </ul>
@@ -1958,6 +964,9 @@
                                 </span>
                               <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                               <div class="submenu-dopdown">
+                                  
+                                  <div class="submenu-dropdown-group--container">
+                                  
                                   <div class="submenu-dropdown__group">
                                       <div class="submenu-dropdown__group-title">
                                           <span class="group-title"></span>
@@ -1968,25 +977,23 @@
                                          <ul class="group-links">
                                           <li class="group-list">
                                                <div class="group-list__content">
-                                                <span class="group-list__title">link title</span>
+                                                <span class="group-list__title"><i class="ri-add-line"></i>link title</span>
                                               <div class="group-list__links">
-                                                <a class="group-list__link">link 1</a>
-                                                <a class="group-list__link">link 1</a>
-                                                <a class="group-list__link">link 1</a>
-                                                <a class="group-list__link">link 1</a>
-                                                <a class="group-list__link">link 1</a>
+                                                <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                                <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                                <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                                
                                               </div>
 
                                                </div>
 
                                                <div class="group-list__content">
-                                                <span class="group-list__title">link title</span>
+                                                <span class="group-list__title"><i class="ri-add-line"></i> link title</span>
                                               <div class="group-list__links">
-                                                <a class="group-list__link">link 1</a>
-                                                <a class="group-list__link">link 1</a>
-                                                <a class="group-list__link">link 1</a>
-                                                <a class="group-list__link">link 1</a>
-                                                <a class="group-list__link">link 1</a>
+                                                <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                                <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                                <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                                
                                               </div>
 
                                                </div>
@@ -2024,6 +1031,8 @@
                                          </ul>
                                       </div>
                                   </div>
+                                  
+                                  </div>
                               </div>
                           </li>
 
@@ -2035,6 +1044,9 @@
                               </span>
                             <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                             <div class="submenu-dopdown">
+                                
+                                <div class="submenu-dropdown-group--container">
+                                
                                 <div class="submenu-dropdown__group">
                                     <div class="submenu-dropdown__group-title">
                                         <span class="group-title"></span>
@@ -2046,25 +1058,23 @@
                                         <li class="group-list">
                                           
                                             <div class="group-list__content">
-                                             <span class="group-list__title">link title</span>
+                                             <span class="group-list__title"><i class="ri-add-line"></i>link title</span>
                                            <div class="group-list__links">
-                                             <a class="group-list__link">link 1</a>
-                                             <a class="group-list__link">link 1</a>
-                                             <a class="group-list__link">link 1</a>
-                                             <a class="group-list__link">link 1</a>
-                                             <a class="group-list__link">link 1</a>
+                                             <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                             <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                             <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                             
                                            </div>
 
                                             </div>
 
                                             <div class="group-list__content">
-                                             <span class="group-list__title">link title</span>
+                                             <span class="group-list__title"><i class="ri-add-line"></i>link title</span>
                                            <div class="group-list__links">
-                                             <a class="group-list__link">link 1</a>
-                                             <a class="group-list__link">link 1</a>
-                                             <a class="group-list__link">link 1</a>
-                                             <a class="group-list__link">link 1</a>
-                                             <a class="group-list__link">link 1</a>
+                                             <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                             <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                             <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                             
                                            </div>
 
                                             </div>
@@ -2076,7 +1086,7 @@
 
                                 <div class="submenu-dropdown__group">
                                     <div class="submenu-dropdown__group-title">
-                                        <span class="group-title">en-tête groupe 2.1.2</span>
+                                       {{-- <span class="group-title">en-tête groupe 2.1.2</span> --}}
                                         <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
                                         <span class="group-icon"></span>
                                     </div>
@@ -2103,6 +1113,8 @@
                                        </ul>
                                     </div>
                                 </div>
+                                
+                                </div>
                             </div>
                         </li>
 
@@ -2114,6 +1126,9 @@
                             </span>
                           <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                           <div class="submenu-dopdown">
+                              
+                              <div class="submenu-dropdown-group--container">
+                              
                               <div class="submenu-dropdown__group">
                                   <div class="submenu-dropdown__group-title">
                                       <span class="group-title"> </span>
@@ -2125,25 +1140,23 @@
                                       <li class="group-list">
                                       
                                           <div class="group-list__content">
-                                           <span class="group-list__title">link title</span>
+                                           <span class="group-list__title"><i class="ri-add-line"></i> link title</span>
                                          <div class="group-list__links">
-                                           <a class="group-list__link">link 1</a>
-                                           <a class="group-list__link">link 1</a>
-                                           <a class="group-list__link">link 1</a>
-                                           <a class="group-list__link">link 1</a>
-                                           <a class="group-list__link">link 1</a>
+                                           <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                           <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                           <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                          
                                          </div>
 
                                           </div>
 
                                           <div class="group-list__content">
-                                           <span class="group-list__title">link title</span>
+                                           <span class="group-list__title"><i class="ri-add-line"></i>link title</span>
                                          <div class="group-list__links">
-                                           <a class="group-list__link">link 1</a>
-                                           <a class="group-list__link">link 1</a>
-                                           <a class="group-list__link">link 1</a>
-                                           <a class="group-list__link">link 1</a>
-                                           <a class="group-list__link">link 1</a>
+                                           <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                           <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                           <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                           
                                          </div>
 
                                           </div>
@@ -2182,6 +1195,9 @@
                                      </ul>
                                   </div>
                               </div>
+                              
+                              </div>
+                              
                           </div>
                       </li>
 
@@ -2193,6 +1209,9 @@
                           </span>
                         <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                         <div class="submenu-dopdown">
+                            
+                            <div class="submenu-dropdown-group--container">
+                            
                             <div class="submenu-dropdown__group">
                                 <div class="submenu-dropdown__group-title">
                                     <span class="group-title"></span>
@@ -2204,25 +1223,23 @@
                                     <li class="group-list">
                                       
                                         <div class="group-list__content">
-                                         <span class="group-list__title">link title</span>
+                                         <span class="group-list__title"><i class="ri-add-line"></i>link title</span>
                                        <div class="group-list__links">
-                                         <a class="group-list__link">link 1</a>
-                                         <a class="group-list__link">link 1</a>
-                                         <a class="group-list__link">link 1</a>
-                                         <a class="group-list__link">link 1</a>
-                                         <a class="group-list__link">link 1</a>
+                                         <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                         <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                         <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                         
                                        </div>
 
                                         </div>
 
                                         <div class="group-list__content">
-                                         <span class="group-list__title">link title</span>
+                                         <span class="group-list__title"><i class="ri-add-line"></i>link title</span>
                                        <div class="group-list__links">
-                                         <a class="group-list__link">link 1</a>
-                                         <a class="group-list__link">link 1</a>
-                                         <a class="group-list__link">link 1</a>
-                                         <a class="group-list__link">link 1</a>
-                                         <a class="group-list__link">link 1</a>
+                                         <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                         <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                         <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                         
                                        </div>
 
                                         </div>
@@ -2234,7 +1251,7 @@
 
                             <div class="submenu-dropdown__group">
                                 <div class="submenu-dropdown__group-title">
-                                    <span class="group-title">en-tête groupe 2.1.2</span>
+                                   {{-- <span class="group-title">en-tête groupe 2.1.2</span> --}}
                                     <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
                                     <span class="group-icon"></span>
                                 </div>
@@ -2261,6 +1278,7 @@
                                    </ul>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </li>
 
@@ -2272,6 +1290,9 @@
                         </span>
                       <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                       <div class="submenu-dopdown">
+                          
+                          <div class="submenu-dropdown-group--container">
+                          
                           <div class="submenu-dropdown__group">
                               <div class="submenu-dropdown__group-title">
                                   <span class="group-title"></span>
@@ -2283,25 +1304,23 @@
                                   <li class="group-list">
                                     
                                       <div class="group-list__content">
-                                       <span class="group-list__title">link title</span>
+                                       <span class="group-list__title"><i class="ri-add-line"></i> link title</span>
                                      <div class="group-list__links">
-                                       <a class="group-list__link">link 1</a>
-                                       <a class="group-list__link">link 1</a>
-                                       <a class="group-list__link">link 1</a>
-                                       <a class="group-list__link">link 1</a>
-                                       <a class="group-list__link">link 1</a>
+                                       <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                       <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                       <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                       
                                      </div>
 
                                       </div>
 
                                       <div class="group-list__content">
-                                       <span class="group-list__title">link title</span>
+                                       <span class="group-list__title"><i class="ri-add-line"></i> link title</span>
                                      <div class="group-list__links">
-                                       <a class="group-list__link">link 1</a>
-                                       <a class="group-list__link">link 1</a>
-                                       <a class="group-list__link">link 1</a>
-                                       <a class="group-list__link">link 1</a>
-                                       <a class="group-list__link">link 1</a>
+                                       <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                       <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                       <a class="group-list__link"><i class="ri-arrow-right-line"></i> link 1</a>
+                                      
                                      </div>
 
                                       </div>
@@ -2313,7 +1332,7 @@
 
                           <div class="submenu-dropdown__group">
                               <div class="submenu-dropdown__group-title">
-                                  <span class="group-title">en-tête groupe 2.1.2</span>
+                                 {{-- <span class="group-title">en-tête groupe 2.1.2</span> --}}
                                   <i class="ri-arrow-down-double-fill submenu-dropdown__group-title-icon"></i>
                                   <span class="group-icon"></span>
                               </div>
@@ -2340,6 +1359,8 @@
                                  </ul>
                               </div>
                           </div>
+                          
+                          </div>
                       </div>
                   </li>
                         </ul>
@@ -2363,6 +1384,7 @@
                             </span>
                             <i class="ri-arrow-down-double-fill dropdown-menu__link-icon"></i>
                             <div class="submenu-dopdown">
+                                <div class="submenu-dropdown-group--container">
                                 <div class="submenu-dropdown__group">
                                     <div class="submenu-dropdown__group-title">
                                         <div>
@@ -2405,7 +1427,7 @@
                                     </div>
                                 </div>
 
-
+</div>
 {{-- 
                                 <div class="menu-partenaires__marquee-container" >
                                   <div class="marquee">

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Ont_a_catmeta extends Model
 {
     use HasFactory;
+    
+    protected $fillable = ['name','desc'];
 }

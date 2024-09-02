@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class OntActuImg extends Model
 {
     use HasFactory;
+    
+    protected $fillable = ['img_path','title ','desc','author '];
 }

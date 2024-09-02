@@ -2,7 +2,7 @@
     <div class="article__container container grid">
       <div class="articles__title">
         <h1 class="section__title articles-section__title">Articles de voyages</h1>
-        <h2 class="article__get-more"><a href="">Get more articles ...</a></h2>
+        <h2 class="article__get-more"><a href="">Plus d'articles ...</a></h2>
       </div>
       <div class="article-inner__container">
         <article class="articles-card">
@@ -12,7 +12,7 @@
                <h3 class="article-card__title">Etude de l'impact du tourisme</h3>
             </div>
             <div class="article-card-date__ctnr">
-              <span>Date the publication</span>
+              <span>Date de publication</span>
              </div>
           </div>
           <div class="article-card__img-ctnr">
@@ -28,7 +28,7 @@
                <h3 class="article-card__title">Etude de l'impact du tourisme</h3>
             </div>
             <div class="article-card-date__ctnr">
-              <span>Date the publication</span>
+              <span>Date de publication</span>
              </div>
           </div>
           <div class="article-card__img-ctnr">
@@ -44,7 +44,7 @@
                <h3 class="article-card__title">Etude de l'impact du tourisme</h3>
             </div>
             <div class="article-card-date__ctnr">
-              <span>Date the publication</span>
+              <span>Date de publication</span>
              </div>
           </div>
           <div class="article-card__img-ctnr">

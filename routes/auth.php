@@ -120,7 +120,7 @@ Route::prefix('admin')->group(function (){
 
         Route::post('confirm-password', [AdminConfirmablePasswordController::class, 'store']);
 
-        Route::put('password', [AdminPasswordController::class, 'update'])->name('password.update');
+        Route::put('password', [AdminPasswordController::class, 'update'])->name('admin.password.update');
 
         Route::post('logout', [AdminAuthSessionController::class, 'destroy'])
         ->name('admin.logout');

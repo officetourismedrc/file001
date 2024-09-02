@@ -5,7 +5,7 @@
                     <div  class="projet__5252-left__cover">
                        
                       <div class="projet__5252-left__top">
-                          <div class="p5252__text-1">Calendrier</div>
+                          <div class="p5252__text-1">Agenda</div>
                           <div class="p5252__text-2"><span>52</span><span>:</span><span>52</span></div>
                       </div>
                       <div class="projet__5252-left__bottom">
@@ -18,13 +18,13 @@
                             </div>
                             <div class="cal__days-of-weeks">
                                 <ul class="days-weeks__lists">
-                                    <li class="days__weeks-list">Mond</li>
-                                    <li class="days__weeks-list">Tues</li>
-                                    <li class="days__weeks-list">Wesd</li>
-                                    <li class="days__weeks-list">Thurs</li>
-                                    <li class="days__weeks-list">Frid</li>
-                                    <li class="days__weeks-list">Sat</li>
-                                    <li class="days__weeks-list">Sund</li>
+                                    <li class="days__weeks-list">Lun</li>
+                                    <li class="days__weeks-list">Mar</li>
+                                    <li class="days__weeks-list">Mer</li>
+                                    <li class="days__weeks-list">Jeu</li>
+                                    <li class="days__weeks-list">Ven</li>
+                                    <li class="days__weeks-list">Sam</li>
+                                    <li class="days__weeks-list">Dim</li>
                                 </ul>
                             </div>
                             <div class="cal__days-of-months">

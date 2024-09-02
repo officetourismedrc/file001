@@ -2,7 +2,7 @@
 
     <div class="a-visiter__container">
      <div class="a-visiter__data">
-       <h1 class="section__title">Meilleurs endroits à Visiter</h1>
+       <h1 class="section__title">Meilleurs endroits à visiter</h1>
      </div>
      
         <div class="a-visiter__content grid swiper">

@@ -22,7 +22,7 @@ class ProvinceController extends Controller
         $data = Province::all();
         //return $data;
 
-        return view('admin.admindashboard.province.province',['provinceList'=>$data]);
+        return view('Admin.Admindashboard.Province.province',['provinceList'=>$data]);
     }
 
     /**
@@ -32,7 +32,7 @@ class ProvinceController extends Controller
     {
         //add a new province
  
-        return view('admin.admindashboard.province.addprovince');
+        return view('Admin.Admindashboard.Province.addProvince');
 
     }
 
@@ -42,6 +42,7 @@ class ProvinceController extends Controller
     public function store(Request $request):RedirectResponse
     {
         //
+        
         $validated = $request->validate([
             'name' => 'required|string|unique:provinces|max:255',
         ]);
@@ -77,8 +78,9 @@ class ProvinceController extends Controller
 
         $hid =  Crypt::encryptString($province->id);
 
-               
-        return view('admin.admindashboard.province.ProvinceEdit',['provinceList'=>$province, 'data' => $data, 'hid'=>$hid]);
+           //if(isset($data[0]))return var_dump($data[0]);
+           //return $data;    
+        return view('Admin.Admindashboard.Province.ProvinceEdit',['provinceList'=>$province, 'data' => $data, 'hid'=>$hid]);
     }
 
     /**
@@ -88,7 +90,7 @@ class ProvinceController extends Controller
     {
         //edit province
 
-        return view('admin.admindashboard.province.editProvince', ['provinceList'=>$province]);
+        return view('Admin.Admindashboard.Province.editProvince', ['provinceList'=>$province]);
     }
 
     /**

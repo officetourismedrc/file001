@@ -1,0 +1,1 @@
+<quotte>{{$data->quotte}}</quotte>

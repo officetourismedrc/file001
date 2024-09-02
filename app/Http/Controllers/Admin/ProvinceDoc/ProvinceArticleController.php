@@ -41,7 +41,7 @@ class ProvinceArticleController extends Controller
 
          
         // return $rt->province_name;
-        return view('admin.admindashboard.province.articles.index',['data'=>$province]);
+        return view('Admin.Admindashboard.Province.articles.index',['data'=>$province]);
         
     }
    

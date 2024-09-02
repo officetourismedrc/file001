@@ -40,14 +40,16 @@
         </div>
     </div>
     <div class="sub-content-container">
+        @if(isset($data[0]->category))
+        
         <div class="table-title__1">
-            <h2 class="table-title__2">List of {{$data[0]->category}}</h2>
+            <h2 class="table-title__2">List of Sous division {{-- $data[0]->category --}}</h2>
         </div>
         <table class="province__table">
             <thead class="table-header">
                 <tr class="table-header-container">
                     <th  class="table-header-list">id</th>
-                    <th class="table-header-list">{{$data[0]->category}}</th>
+                    <th class="table-header-list">Category</th>
                     <th class="table-header-list">province</th>
                     <th class="table-header-list">action</th>
                 </tr>
@@ -56,19 +58,20 @@
                 @foreach ($data as $item)
                 <tr class="table-body-container">
                     <td class="table-body-cell">{{$loop->iteration}}</td>
-                   <td class="table-body-cell"><a href="">{{$item->entity_name}}</a></td>
+                    <td class="table-body-cell"><spam>{{$item->category}}</spam></td>
+                   <td class="table-body-cell"><a href="{{ route('deuxniveau.show',['deuxniveau'=>$item->entity_id]) }}">{{$item->entity_name}}</a></td>
                     <td class="table-body-cell">{{$item->province}}</td>
                     <td class="table-body-cell table-body-cell-action">
-                        <form action="" method="get">
+                        <form action="{{ route('deuxniveau.destroy',['deuxniveau'=>$item->entity_id]) }}" method="get">
                             @csrf
                              <button>edit</button>
                         </form>
-                        <form action="" method="post">
+                        <form action="{{ route('deuxniveau.destroy',['deuxniveau'=>$item->entity_id]) }}" method="post">
                             @csrf
                             @method('DELETE')
                             <button>delete</button>
                        </form>
-                       <form action="" method="get">
+                       <form action="{{ route('deuxniveau.show',['deuxniveau'=>$item->entity_id]) }}" method="get">
                         @csrf
                         <button>show</button>
                    </form>
@@ -79,7 +82,9 @@
             </tbody>
             <tfoot></tfoot>
         </table>
-
+        
+        
+        @endif
     </div>
 </div>
 @endsection

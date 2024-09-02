@@ -35,7 +35,7 @@
         <img src="{{url($item->image_path)}}" alt="">
         <div class="slider__title"><div class="slider__title-inner"><a href="">Le Barage d'Inga</a></div></div>
 
-        <div class="slider__subtitle slider__description"><a href="">Lorem ipsum, dolor sit amet consectetur</a></div>
+        <div class="slider__subtitle slider__description"><a href="">Md. le</a></div>
   
       </div>
     </article>

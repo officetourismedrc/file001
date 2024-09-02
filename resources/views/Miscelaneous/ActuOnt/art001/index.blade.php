@@ -24,7 +24,7 @@
                    <main class="page-left__main">
                        <div class="article-title__block">
                             <h1 class="article_main__title">{{$article['article']->title}}</h1>
-                            <h2 class="article_second__title">Qu'à ne t'il des operations de retirement</h2>
+                            <h2 class="article_second__title"></h2>
                        </div>
                        <div class="article-actuel__content">
                              <div class="article__meta-data">

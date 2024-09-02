@@ -11,14 +11,14 @@
                   <ul class="footer1-link-desc__container">
                     <li class="footer1-sub-list">
                       <a href="#" class="footer1-sub-link">
-                          <span>Nos hotels</span>
+                          <span>Hotels</span>
                       </a>
                     </li>
 
                     <li class="footer1-sub-list">
                       <a href="#" class="footer1-sub-link">
                       
-                          <span>Les Atrais Popuplaire</span>
+                          <span>Les Attraits Popuplaires</span>
                           
                       </a>
                     </li>
@@ -26,7 +26,7 @@
                     <li class="footer1-sub-list">
                       <a href="#" class="footer1-sub-link">
                         
-                          <span>Les sites Touristiques</span>
+                          <span>Les Sites Touristiques</span>
                           
                       </a>
                     </li>
@@ -34,16 +34,16 @@
                 </div>
               </li>
 
-              <li class="footer1-main__link">
+              <li class="footer1-main__link" ">
                 <div class="footer1-main-link__container">
-                  <span class="footer1-main__l">Sites Relatifs A L'ONT</span>
+                  <span class="footer1-main__l">Sites Relatifs à L'O.N.T</span>
                 </div>
                 <div class="footer1-link__description">
                   <ul class="footer1-link-desc__container">
                     <li class="footer1-sub-list">
                       <a href="#" class="footer1-sub-link">
                         
-                          <span>site de payement FPT</span>
+                          <span>Site de payement FPT</span>
                           
                       </a>
                     </li>
@@ -51,7 +51,7 @@
                     <li class="footer1-sub-list">
                       <a href="#" class="footer1-sub-link">
                         
-                          <span>site service touristique</span>
+                          <span>Site Institutionnel de l'O.N.T</span>
                          
                       </a>
                     </li>
@@ -59,7 +59,7 @@
                     <li class="footer1-sub-list">
                       <a href="#" class="footer1-sub-link">
                        
-                          <span>Site du produit touristique</span>
+                          <span>Site du Produit Touristique</span>
                           
                       </a>
                     </li>
@@ -76,7 +76,7 @@
                     <li class="footer1-sub-list">
                       <a href="#" class="footer1-sub-link">
                         
-                          <span>Qui sommes Nous</span>
+                          <span>Qui sommes-Nous?</span>
                           
                       </a>
                     </li>
@@ -84,7 +84,7 @@
                     <li class="footer1-sub-list">
                       <a href="#" class="footer1-sub-link">
                         
-                          <span>Contacter Nous</span>
+                          <span>Contactez Nous</span>
                           
                       </a>
                     </li>
@@ -101,14 +101,14 @@
               </li>
             </ul>
           </div>
-       <div class="footer__1-line"></div>
+      <!-- <div class="footer__1-line"></div>-->
        <!-- end related website -->
        
     </div>
     <div class="footer__2">
         
         <div class="footer-2__logo">
-            <img src="{{url('assets/images/logo-paysage.png')}}" alt="logo ont footer">
+            <img src="{{url('assets/images/logo_ont_noir_blanc.png')}}" alt="logo ont footer">
         </div>
         <div class="footer-2__juridiction footer__2-content">
            <ul class="footer-2__juridiction-link">
@@ -121,15 +121,16 @@
             <li class="footer-2__j-1 footer-2__j-link3">
               <a href="">Conditions d'utilisation</a>
             </li>
-            <li class="footer-2__j-1">
-                <a href="">Liens</a>
-            </li>
+           
            </ul>
         </div>
         <div class="footer-2__sociaux footer__2-content">
-            <i class="ri-facebook-fill"></i>
-            <i class="ri-instagram-fill"></i>
-            <i class="ri-youtube-fill"></i>
+                <a href="https://www.facebook.com/officetourismerdc?mibextid=LQQJ4d" target="_blank" class="nav__header-sociaux-link"><img class="sociaux_logo_link" src='{{url("assets/images/footerImage/facebook-white-logo.png")}}' /></a>
+                <a href="https://www.instagram.com/officenationaltourisme_rdcongo?igsh=NTc4MTIwNjQ2YQ==" target="_blank" class="nav__header-sociaux-link"><img class="sociaux_logo_link" src='{{url("assets/images/footerImage/instagram-white-logo.png")}}' /></a>
+                <a href="https://twitter.com/CongoRdtourism" class="nav__header-sociaux-link" target="_blank"><img class="sociaux_logo_link" src='{{url("assets/images/footerImage/x-twitter-white-logo.png")}}' /></a>
+                <a href="https://twitter.com/CongoRdtourism" class="nav__header-sociaux-link" target="_blank"><img class="sociaux_logo_link" src='{{url("assets/images/footerImage/linkedin-white-logo-1.png")}}' /></a>
+                <a href="https://twitter.com/CongoRdtourism" class="nav__header-sociaux-link" target="_blank"><img class="sociaux_logo_link" src='{{url("assets/images/footerImage/tiktok-white-logo-1.png")}}' /></a>
+                <a href="https://twitter.com/CongoRdtourism" class="nav__header-sociaux-link" target="_blank"><img class="sociaux_logo_link" src='{{url("assets/images/footerImage/youtube-logo-white-1.png")}}' /></a>
         </div>
     </div>
     </div>

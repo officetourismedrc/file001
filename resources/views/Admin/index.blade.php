@@ -12,8 +12,12 @@
     <title>Dashboard</title>
 
     <link rel="stylesheet" href="{{url('assets/css/stylea.css')}}">
+    <link rel="stylesheet" href="{{url('assets/css/formstyle.css')}}">
+    <link rel="stylesheet" href="{{url('assets/css/article_add_content.css')}}">
+     <!--================================css style=========================================-->
 
     <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="{{url('assets/js/article_add_content.js')}}"></script>
 
 
     <!-- google chart code  -->
@@ -114,7 +118,7 @@
                     <div class="side-menu__menu">
                        <ul class="side-menu__lists">
                            <li class="side-menu__icon"><i class="ri-article-fill"></i></li>
-                           <li class="side-menu__list">Index</li>
+                           <li class="side-menu__list"><a href="{{route('index.page')}}">Index</a></li>
                        </ul>
                     </div>
                     <div class="side-menu__menu">
@@ -148,6 +152,27 @@
                     <ul class="side-menu__lists">
                         <li class="side-menu__icon"><i class="ri-question-answer-fill"></i></li>
                         <li class="side-menu__list"><a href="{{route('decoupage-Administratif.index')}}">Decoupage Admin</a></li>
+                    </ul>
+                </div>
+                
+                <div class="side-menu__menu">
+                    <ul class="side-menu__lists">
+                        <li class="side-menu__icon"><i class="ri-layout-grid-2-fill"></i></li>
+                        <li class="side-menu__list"><a href="{{route('miscArticle.index')}}">Miscellaneous Articles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="side-menu__menu">
+                    <ul class="side-menu__lists">
+                        <li class="side-menu__icon"><i class="ri-question-answer-fill"></i></li>
+                        <li class="side-menu__list"><a href="">Essentiels</a></li>
+                    </ul>
+                </div>
+                
+                <div class="side-menu__menu">
+                    <ul class="side-menu__lists">
+                        <li class="side-menu__icon"><i class="ri-question-answer-fill"></i></li>
+                        <li class="side-menu__list"><a href="{{route('parametre.parametre')}}">Parametres</a></li>
                     </ul>
                 </div>
 

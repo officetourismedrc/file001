@@ -1,6 +1,5 @@
- /*=========start currency coverter==========*/
 
-  currencies = [
+     currencies = [
     ['AED',	'UAE Dirham',	'United Arab Emirates']
     ,['AFN',	'Afghan Afghani',	'Afghanistan'] 
     ,['ALL',	'Albanian Lek'	,'Albania'] 
@@ -163,8 +162,14 @@
     ,['ZMW',	'Zambian Kwacha',	'Zambia'] 
     ,['ZWL'	,'Zimbabwean Dollar'	,'Zimbabwe'] 
   ];
+  
+  const apiCurencyKey ="2b29347f28fc84ecb060f966";
+  const urlPair ="https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/EUR/GBP";
+  
+  
 
   const fromCurrency = document.getElementById('exchange-rate-from');
+  //const toCurrency = document.querySelector('.tocurrency');
 
   currencies.forEach((currency)=>{
       const option = document.createElement('option');
@@ -177,15 +182,20 @@
 
   let convertCurrency = ()=>{
     const amount = 1;
-    const fromCur = fromCurrency.value;
+    let fromCur = fromCurrency.value;
     const toCurr = 'CDF';
     
     if(amount !== 1 && toCurr !== 'CDF'){
        alert('error wrong value currency');
     }else{
-    //    fetch(api)
-    //             .then((resp)=>resp.json)
-    //             .then((data)=>console.log(data))
+        fetch(`https://v6.exchangerate-api.com/v6/${apiCurencyKey}/pair/EUR/${toCurr}`)
+              .then(response =>response.json())
+                .then(json=>{
+                    console.log(json.conversion_rate)
+                    //toCurrency.innerHTML = data.conversion_rate;
+                })
+                
+               
     }
   }
   fromCurrency.addEventListener('change', ()=>{
@@ -193,7 +203,7 @@
   });
   
 /*=========end currency converter===========*/
-const APIKeyTemp = "0ae2d23ce77179a2a953f190c21f0689";
+/*const APIKeyTemp = "0ae2d23ce77179a2a953f190c21f0689";
     const city = ['kinshasa','lubumbashi'];
     const image =[],
           temperature = [],
@@ -269,22 +279,22 @@ city.forEach(n=>{
         
                 switch(json.weather[0].main){
                     case 'Clear':
-                    image[i] ='assets/images/clear.jpg';
+                    image[i] ='https://officetourisme-rdc.com/assets/images/clear.jpg';
                     break;
                     case 'Rain':
-                        image[i] = 'assets/images/rain.png';
+                        image[i] = 'https://officetourisme-rdc.com/assets/images/rain.png';
                         break;
                     case 'Snow':
-                        image[i] = 'assets/images/snow.png';
+                        image[i] = 'https://officetourisme-rdc.com/assets/images/snow.png';
                         break;
                     case 'Clouds':
-                        image[i] = 'assets/images/cloud.png';
+                        image[i] = 'https://officetourisme-rdc.com/assets/images/cloud.png';
                         break;
                     case 'Haze':
-                        image[i] ='assets/images/haze.png';
+                        image[i] ='https://officetourisme-rdc.com/assets/images/haze.png';
                         break;
                     default:
-                        image[i] = 'assets/images/rain.png';
+                        image[i] = 'https://officetourisme-rdc.com/assets/images/rain.png';
                 }
                 
                 temperature[i] = `${parseInt(json.main.temp)}<span>&#176C</span>`;
@@ -304,6 +314,7 @@ i++;
            
         
 }
+*/
 /*==========start weather=============*/
 const weatherTop = document.querySelectorAll('.weather-1');
 
@@ -326,6 +337,7 @@ const root = document.documentElement;
 
 const elementDisplayed = getComputedStyle(root).getPropertyValue('--marquee-elements-displayed');
 const contenair = document.querySelector('.marquee-elmts');
+if(contenair !== null){
 
 root.style.setProperty('--marquee-elements-number', contenair.children.length);
 
@@ -333,18 +345,27 @@ for(let i = 0; i<elementDisplayed; i++)
 {
     contenair.appendChild(contenair.children[i].cloneNode(true));
 }
+}
 /**end marquee qnimqtion =============== */
 
 /**nav change color ================================= */
 const navmenuColor = document.querySelector('.nav__main-container');
 const menuLinkColorChange = document.querySelector('.nav-menu__container');
+const logoImageChange = document.querySelector('.logo__image');
+const logoColorLink = "https://officetourisme-rdc.com/assets/images/logo_ont_normal.png";
+const logoLink = "https://officetourisme-rdc.com/assets/images/logo_ont_noir_blanc.png"; 
+
 window.addEventListener('scroll', ()=>{
   if(window.scrollY >= 10){
      navmenuColor.classList.add('change-color');
-  menuLinkColorChange.classList.add('color-change-link');}
+  menuLinkColorChange.classList.add('color-change-link');
+      logoImageChange.src = logoColorLink;
+  }
   else if(window.scrollY == 0){
       menuLinkColorChange.classList.remove('color-change-link');
-  navmenuColor.classList.remove('change-color');}
+  navmenuColor.classList.remove('change-color');
+       logoImageChange.src = logoLink;
+  }
 });
 /**end nav change color============================ */
 
@@ -394,8 +415,7 @@ window.addEventListener('scroll', ()=>{
 const container = document.querySelector('.slider');
 const slider_container = document.querySelector('.slider_container');
 const items = document.querySelectorAll('.slider_item');
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
+
 const controler = document.querySelectorAll('.slide-controler');
 
 if(container !== null)
@@ -419,7 +439,7 @@ let current = ()=>{
         if(items[i].classList.contains('active') && i < items.length-1){
             items[i].classList.replace('active','above');
             items[i+1].classList.add('active');
-            controler[i+1].classList.add('active');
+            controler[i+1]?.classList.add('active');
             break;
         }
    
@@ -429,61 +449,7 @@ let current = ()=>{
 
 let anim = setInterval(current, 5000);
 
-let nextPrev = (e)=>{
 
-    for(let i=0; i< items.length; i++){
-        if(items[i].classList.contains('active') )
-        {
-            clearInterval(anim);
-            if(e.target === next || e.target === next.firstElementChild){
-                
-               if(i < items.length-1){
-                items.forEach(n=>{
-                    if(n.classList.contains('above'))n.classList.remove('above');
-                    if(n.classList.contains('below'))n.classList.remove('below');
-                });
-                controler.forEach(n=>{
-                    if(n.classList.contains('active'))n.classList.remove('active');
-                });
-                items[i].classList.replace('active','above');
-                items[i+1].classList.add('active');
-                controler[i+1].classList.add('active');
-
-                anim = setInterval(current, 5000);
-                break;
-            }
-            else{
-                anim = setInterval(current, 5000);
-                break
-            }
-         }
-            else if(e.target === prev || e.target === prev.firstElementChild){
-                if(i > 0){
-                    items.forEach(n=>{
-                    if(n.classList.contains('above'))n.classList.remove('above');
-                    if(n.classList.contains('below'))n.classList.remove('below');
-                });
-                controler.forEach(n=>{
-                    if(n.classList.contains('active'))n.classList.remove('active');
-                });
-                items[i].classList.replace('active','below');
-                items[i-1].classList.add('active','below');
-                controler[i-1].classList.add('active');
-
-                anim = setInterval(current, 5000);
-                break;
-              }
-              else{
-                    anim = setInterval(current, 5000);
-                    
-
-                break;
-              }
-            }
-
-        }
-    }
-}
 let controlerFct = (e)=>{
     //i clicked controler, j current active item
     let contElmt = document.querySelector('.item__controler .item_controler_container').children;
@@ -534,8 +500,7 @@ let controlerFct = (e)=>{
        }
      }
 }
-next.addEventListener('click', nextPrev);
-prev.addEventListener('click',nextPrev);
+
 controler.forEach(n=>{
     n.addEventListener('click', controlerFct)
 });
@@ -736,18 +701,23 @@ const publiciteSwiper = new Swiper('.publicite__content', {
 /**end publicity=============================== */
 window.onload = function(){
     convertCurrency();
-    temper();
+    //temper();
 
     if(window.scrollY >= 10){
         navmenuColor.classList.add('change-color');
-     menuLinkColorChange.classList.add('color-change-link');}
+     menuLinkColorChange.classList.add('color-change-link');
+        logoImageChange.src = logoColorLink;
+    }
      else if(window.scrollY == 0){
          menuLinkColorChange.classList.remove('color-change-link');
-     navmenuColor.classList.remove('change-color');}
+     navmenuColor.classList.remove('change-color');
+         logoImageChange.src = logoLink;
+     }
 
 
     // appliedFixedToHeader();
   }
+  /*
 
   //calendar 52:52 =====================================
 
@@ -756,7 +726,7 @@ window.onload = function(){
   let currentYear = currentDate.getFullYear();
   let currentMonth = currentDate.getMonth();
 
-  const monthsText = ['January','February','March','April','May','june','july','August','September','October','November','December'] 
+  const monthsText = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'] 
 
   const currentDateText = document.querySelector('.current__date');
 
@@ -940,10 +910,13 @@ nextMonth.addEventListener("click", () => {
 
        }
     
-
+*/
 
 
  // slider 5252 ---================== 
 
 
   //calendar 52:52 =====================================
+  
+  
+  

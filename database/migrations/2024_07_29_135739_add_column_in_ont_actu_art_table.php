@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('ont_actu_art', function (Blueprint $table) {
+            //
+            
+            $table->unsignedTinyInteger('priority')->nullable();
+            $table->boolean('is_optimized')->default(false);
+            $table->bigInteger('clicks')->default(0);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('ont_actu_art', function (Blueprint $table) {
+            //
+            
+            $table->dropColumn('priority');
+            $table->dropColumn('is_optimized');
+            $table->dropColumn('clicks');
+        });
+    }
+};

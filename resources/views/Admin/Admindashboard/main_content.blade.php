@@ -1,4 +1,4 @@
-@extends('admin.index')
+@extends('Admin.index')
 @section('sectionC')
 <div class="main-main__container">
        <div class="main_block">

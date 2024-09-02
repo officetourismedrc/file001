@@ -16,7 +16,7 @@ class DecoupageAdminCatController extends Controller
         //
         $list = Decoupagecatg::all();
 
-        return view('admin.admindashboard.province.decoupageAdminCat.index',['list'=>$list]);
+        return view('Admin.Admindashboard.Province.decoupageAdminCat.index',['list'=>$list]);
     }
 
     /**

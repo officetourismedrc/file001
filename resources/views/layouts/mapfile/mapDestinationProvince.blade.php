@@ -86,15 +86,15 @@
     <text xmlns="http://www.w3.org/2000/svg" class="NK" xml:space="preserve" text-anchor="start"  font-weight="bold" id="svg_35" y="250" x="613.21451" stroke-width="0" stroke="#000" fill="#FF0000">GOMA</text>
 
     <!-- Lubumbashi -->
-    <ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_2" cy="654" cx="585.71451" fill="#ff0000"></ellipse>
+    <!--<ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_2" cy="654" cx="585.71451" fill="#ff0000"></ellipse>-->
     <!-- Kinshasa -->
-    <ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_32" cy="388" cx="144.71451" fill="#ff0000"></ellipse>
+    <!--<ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_32" cy="388" cx="144.71451" fill="#ff0000"></ellipse>-->
     <!-- Matadi -->
-    <ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_33" cy="426" cx="20.71451" fill="#ff0000"></ellipse>
+    <!--<ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_33" cy="426" cx="20.71451" fill="#ff0000"></ellipse>-->
     <!-- Goma -->
-    <ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_36" cy="258" cx="655.71451" fill="#ff0000"></ellipse>
+    <!--<ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_36" cy="258" cx="655.71451" fill="#ff0000"></ellipse>-->
     <!-- Kisangani -->
-    <ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_38" cy="200" cx="489.71451" fill="#ff0000"></ellipse>
+    <!--<ellipse xmlns="http://www.w3.org/2000/svg" stroke="#000" ry="5" rx="5.5" id="svg_38" cy="200" cx="489.71451" fill="#ff0000"></ellipse>-->
 
 
 
@@ -210,7 +210,7 @@
     <!--
     <line xmlns="http://www.w3.org/2000/svg" id="svg_55" y2="637" x2="205.88166" y1="401" x1="321.88166"
       stroke="#000" fill="none" /> -->
-    <text xmlns="http://www.w3.org/2000/svg" class='KS' xml:space="preserve" text-anchor="start"  font-weight="bold" stroke-width="0" id="svg_56" y="388" x="310.88166" stroke="#000" fill="#000000">KASAI</text>
+    <!--<text xmlns="http://www.w3.org/2000/svg" class='KS' xml:space="preserve" text-anchor="start"  font-weight="bold" stroke-width="0" id="svg_56" y="388" x="310.88166" stroke="#000" fill="#000000">KASAI</text>
 
     <ellipse xmlns="http://www.w3.org/2000/svg" ry="3.5" rx="3.5" id="svg_58" cy="583.5" cx="589.38166" stroke="#000" fill="#EEF0F0"></ellipse>
 
@@ -262,5 +262,5 @@
 
     <ellipse xmlns="http://www.w3.org/2000/svg" transform="rotate(-178.472 377.382 443.5)" stroke="#000" ry="3.5" rx="3.5" id="svg_84" cy="443.5" cx="377.38166" fill="#EEF0F0"></ellipse>
 
-    <ellipse xmlns="http://www.w3.org/2000/svg" transform="rotate(-178.472 418.382 439.5)" stroke="#000" ry="3.5" rx="3.5" id="svg_85" cy="439.5" cx="413.38166" fill="#EEF0F0"></ellipse>
+    <ellipse xmlns="http://www.w3.org/2000/svg" transform="rotate(-178.472 418.382 439.5)" stroke="#000" ry="3.5" rx="3.5" id="svg_85" cy="439.5" cx="413.38166" fill="#EEF0F0"></ellipse>-->
   </svg>

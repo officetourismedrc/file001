@@ -1,0 +1,1 @@
+<img src="" class="utility_img" />

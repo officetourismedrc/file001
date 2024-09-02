@@ -4,10 +4,13 @@
 @endsection
 @section('content')
 
-<h1 class="section__title">Kinshasa</h1>
+
 @include('Province.kinshasa.interactiveMapKinshasa')
 @include('Province.kinshasa.articleKinshasa')
-@include('Province.kinshasa.festivalLocal')
+@include('Province.kinshasa.explorerRegion')
+@include('Province.kinshasa.pointFortRegionaux')
+
+{{-- @include('Province.kinshasa.festivalLocal')
 @include('Province.kinshasa.attractionPopulaire')
-@include('Province.kinshasa.localFood')
+@include('Province.kinshasa.localFood') --}}
 @endsection

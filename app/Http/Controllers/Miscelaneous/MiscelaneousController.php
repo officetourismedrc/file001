@@ -9,6 +9,13 @@ use Illuminate\Support\Facades\DB;
 class MiscelaneousController extends Controller
 {
     //
+    
+    public function index(){
+        
+        return view('Miscelaneous.infoEssentiel.index', ['provinceLien'=>$data]);
+        
+        
+    }
 
     //essentiel info method route
     public function infoEssentiel(){

@@ -20,7 +20,7 @@ class DeuxniveauController extends Controller
         //
        $list =  Deuxniveau::all();
 
-        return view('admin.admindashboard.province.DeuxiemeNiveau.index',['list'=>$list]);
+        return view('Admin.Admindashboard.Province.DeuxiemeNiveau.index',['list'=>$list]);
     }
 
     /**
@@ -32,7 +32,7 @@ class DeuxniveauController extends Controller
         $data['province'] = Province::all();
         $data['category'] = Decoupagecatg::all();
 
-        return view('admin.admindashboard.province.DeuxiemeNiveau.add', ['data'=>$data]);
+        return view('Admin.Admindashboard.Province.DeuxiemeNiveau.add', ['data'=>$data]);
     }
 
     /**
@@ -58,7 +58,13 @@ class DeuxniveauController extends Controller
      */
     public function show(Deuxniveau $deuxniveau)
     {
-        //
+        //code goes here
+        // return $deuxniveau;
+        $deuxniveau->province = Province::find($deuxniveau->province_id);
+        $deuxniveau->division = Decoupagecatg::find($deuxniveau->decoupagecatg_id);
+        //return $deuxniveau;
+        //'provinceList'=>$province,  'hid'=>$hid
+        return view('Admin.Admindashboard.Province.DeuxiemeNiveau.show',['data' => $deuxniveau]);
     }
 
     /**
@@ -70,7 +76,7 @@ class DeuxniveauController extends Controller
          $data['province'] = Province::all();
          $data['category'] = Decoupagecatg::all();
 
-        return view('admin.admindashboard.province.DeuxiemeNiveau.edit', ['deuxniveau'=>$deuxniveau , 'data'=>$data]);
+        return view('Admin.Admindashboard.Province.DeuxiemeNiveau.edit', ['deuxniveau'=>$deuxniveau , 'data'=>$data]);
     }
 
     /**
